@@ -8,25 +8,41 @@
 
 /* Begin PBXBuildFile section */
 		EDA8F9C2223BA9580001682E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDA8F9C1223BA9580001682E /* AppDelegate.swift */; };
-		EDA8F9C4223BA9580001682E /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDA8F9C3223BA9580001682E /* FirstViewController.swift */; };
-		EDA8F9C6223BA9580001682E /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDA8F9C5223BA9580001682E /* SecondViewController.swift */; };
 		EDA8F9C9223BA9580001682E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EDA8F9C7223BA9580001682E /* Main.storyboard */; };
 		EDA8F9CB223BA95A0001682E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EDA8F9CA223BA95A0001682E /* Assets.xcassets */; };
 		EDA8F9CE223BA95A0001682E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EDA8F9CC223BA95A0001682E /* LaunchScreen.storyboard */; };
 		EDA8F9D7223BABCD0001682E /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EDA8F9D6223BABCD0001682E /* HealthKit.framework */; };
+		EDA8F9FB223DB5C00001682E /* Dashboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EDA8F9F9223DB5C00001682E /* Dashboard.storyboard */; };
+		EDA8F9FE223DB5E20001682E /* CheckIn.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EDA8F9FC223DB5E20001682E /* CheckIn.storyboard */; };
+		EDA8FA01223DB6090001682E /* Recommendations.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EDA8F9FF223DB6090001682E /* Recommendations.storyboard */; };
+		EDA8FA04223DB6150001682E /* Profile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EDA8FA02223DB6150001682E /* Profile.storyboard */; };
+		EDA8FA07223DB61F0001682E /* About.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EDA8FA05223DB61F0001682E /* About.storyboard */; };
+		EDA8FA09223DB6810001682E /* DashboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDA8FA08223DB6800001682E /* DashboardViewController.swift */; };
+		EDA8FA0B223DB6C50001682E /* CheckInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDA8FA0A223DB6C50001682E /* CheckInViewController.swift */; };
+		EDA8FA0D223DB6D20001682E /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDA8FA0C223DB6D20001682E /* ProfileViewController.swift */; };
+		EDA8FA0F223DB6E20001682E /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDA8FA0E223DB6E20001682E /* AboutViewController.swift */; };
+		EDA8FA11223DB6F00001682E /* RecommendationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDA8FA10223DB6F00001682E /* RecommendationsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		EDA8F9BE223BA9580001682E /* Diabetes Monitoring & Assist.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Diabetes Monitoring & Assist.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EDA8F9C1223BA9580001682E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		EDA8F9C3223BA9580001682E /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
-		EDA8F9C5223BA9580001682E /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 		EDA8F9C8223BA9580001682E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		EDA8F9CA223BA95A0001682E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EDA8F9CD223BA95A0001682E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EDA8F9CF223BA95A0001682E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EDA8F9D6223BABCD0001682E /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = System/Library/Frameworks/HealthKit.framework; sourceTree = SDKROOT; };
 		EDA8F9D8223BABCD0001682E /* Diabetes Monitoring & Assist.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Diabetes Monitoring & Assist.entitlements"; sourceTree = "<group>"; };
+		EDA8F9FA223DB5C00001682E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Dashboard.storyboard; sourceTree = "<group>"; };
+		EDA8F9FD223DB5E20001682E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/CheckIn.storyboard; sourceTree = "<group>"; };
+		EDA8FA00223DB6090001682E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Recommendations.storyboard; sourceTree = "<group>"; };
+		EDA8FA03223DB6150001682E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Profile.storyboard; sourceTree = "<group>"; };
+		EDA8FA06223DB61F0001682E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/About.storyboard; sourceTree = "<group>"; };
+		EDA8FA08223DB6800001682E /* DashboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardViewController.swift; sourceTree = "<group>"; };
+		EDA8FA0A223DB6C50001682E /* CheckInViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CheckInViewController.swift; sourceTree = "<group>"; };
+		EDA8FA0C223DB6D20001682E /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		EDA8FA0E223DB6E20001682E /* AboutViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AboutViewController.swift; sourceTree = "<group>"; };
+		EDA8FA10223DB6F00001682E /* RecommendationsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecommendationsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,12 +79,20 @@
 			children = (
 				EDA8F9D8223BABCD0001682E /* Diabetes Monitoring & Assist.entitlements */,
 				EDA8F9C1223BA9580001682E /* AppDelegate.swift */,
-				EDA8F9C3223BA9580001682E /* FirstViewController.swift */,
-				EDA8F9C5223BA9580001682E /* SecondViewController.swift */,
+				EDA8FA08223DB6800001682E /* DashboardViewController.swift */,
+				EDA8FA0A223DB6C50001682E /* CheckInViewController.swift */,
+				EDA8FA0C223DB6D20001682E /* ProfileViewController.swift */,
+				EDA8FA0E223DB6E20001682E /* AboutViewController.swift */,
+				EDA8FA10223DB6F00001682E /* RecommendationsViewController.swift */,
 				EDA8F9C7223BA9580001682E /* Main.storyboard */,
+				EDA8F9F9223DB5C00001682E /* Dashboard.storyboard */,
 				EDA8F9CA223BA95A0001682E /* Assets.xcassets */,
 				EDA8F9CC223BA95A0001682E /* LaunchScreen.storyboard */,
 				EDA8F9CF223BA95A0001682E /* Info.plist */,
+				EDA8F9FC223DB5E20001682E /* CheckIn.storyboard */,
+				EDA8F9FF223DB6090001682E /* Recommendations.storyboard */,
+				EDA8FA02223DB6150001682E /* Profile.storyboard */,
+				EDA8FA05223DB61F0001682E /* About.storyboard */,
 			);
 			path = "Diabetes Monitoring & Assist";
 			sourceTree = "<group>";
@@ -145,8 +169,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				EDA8F9CE223BA95A0001682E /* LaunchScreen.storyboard in Resources */,
+				EDA8FA01223DB6090001682E /* Recommendations.storyboard in Resources */,
+				EDA8FA07223DB61F0001682E /* About.storyboard in Resources */,
 				EDA8F9CB223BA95A0001682E /* Assets.xcassets in Resources */,
 				EDA8F9C9223BA9580001682E /* Main.storyboard in Resources */,
+				EDA8F9FE223DB5E20001682E /* CheckIn.storyboard in Resources */,
+				EDA8FA04223DB6150001682E /* Profile.storyboard in Resources */,
+				EDA8F9FB223DB5C00001682E /* Dashboard.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -157,9 +186,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EDA8F9C6223BA9580001682E /* SecondViewController.swift in Sources */,
 				EDA8F9C2223BA9580001682E /* AppDelegate.swift in Sources */,
-				EDA8F9C4223BA9580001682E /* FirstViewController.swift in Sources */,
+				EDA8FA0B223DB6C50001682E /* CheckInViewController.swift in Sources */,
+				EDA8FA0D223DB6D20001682E /* ProfileViewController.swift in Sources */,
+				EDA8FA11223DB6F00001682E /* RecommendationsViewController.swift in Sources */,
+				EDA8FA0F223DB6E20001682E /* AboutViewController.swift in Sources */,
+				EDA8FA09223DB6810001682E /* DashboardViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -180,6 +212,46 @@
 				EDA8F9CD223BA95A0001682E /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		EDA8F9F9223DB5C00001682E /* Dashboard.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EDA8F9FA223DB5C00001682E /* Base */,
+			);
+			name = Dashboard.storyboard;
+			sourceTree = "<group>";
+		};
+		EDA8F9FC223DB5E20001682E /* CheckIn.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EDA8F9FD223DB5E20001682E /* Base */,
+			);
+			name = CheckIn.storyboard;
+			sourceTree = "<group>";
+		};
+		EDA8F9FF223DB6090001682E /* Recommendations.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EDA8FA00223DB6090001682E /* Base */,
+			);
+			name = Recommendations.storyboard;
+			sourceTree = "<group>";
+		};
+		EDA8FA02223DB6150001682E /* Profile.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EDA8FA03223DB6150001682E /* Base */,
+			);
+			name = Profile.storyboard;
+			sourceTree = "<group>";
+		};
+		EDA8FA05223DB61F0001682E /* About.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EDA8FA06223DB61F0001682E /* Base */,
+			);
+			name = About.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */

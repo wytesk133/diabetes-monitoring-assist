@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Check In-->
+        <scene sceneID="Qyn-EA-x5m">
+            <objects>
+                <viewController storyboardIdentifier="CheckInViewController" id="zvz-CP-pjq" customClass="CheckInViewController" customModule="Diabetes_Monitoring___Assist" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="u2H-ZO-Ni0">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Check In" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qpg-lP-VOS">
+                                <rect key="frame" x="154" y="323" width="67" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="qpg-lP-VOS" firstAttribute="centerY" secondItem="u2H-ZO-Ni0" secondAttribute="centerY" id="Cxx-T3-OUJ"/>
+                            <constraint firstItem="qpg-lP-VOS" firstAttribute="centerX" secondItem="u2H-ZO-Ni0" secondAttribute="centerX" id="DUb-YE-igK"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Ywc-l2-Gcb"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Check In" image="health_sources" id="CI5-Di-cLy"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="XA1-XV-iwl" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="140" y="152"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="health_sources" width="30" height="30"/>
+    </resources>
+</document>
