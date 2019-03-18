@@ -1,7 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Workspace
    version = "1.0">
+   <Group
+      location = "group:DBS"
+      name = "DBS">
+      <Group
+         location = "group:checkInDBS"
+         name = "checkInDBS">
+         <FileRef
+            location = "group:database.sql">
+         </FileRef>
+      </Group>
+   </Group>
    <FileRef
-      location = "self:Diabetes Monitoring &amp; Assist.xcodeproj">
+      location = "group:../../../../DBS/checkInDBS/check.sql">
+   </FileRef>
+   <FileRef
+      location = "self:">
    </FileRef>
 </Workspace>
