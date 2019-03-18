@@ -20,7 +20,6 @@
 		EDA8FA09223DB6810001682E /* DashboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDA8FA08223DB6800001682E /* DashboardViewController.swift */; };
 		EDA8FA0B223DB6C50001682E /* CheckInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDA8FA0A223DB6C50001682E /* CheckInViewController.swift */; };
 		EDA8FA0D223DB6D20001682E /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDA8FA0C223DB6D20001682E /* ProfileViewController.swift */; };
-		EDA8FA0F223DB6E20001682E /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDA8FA0E223DB6E20001682E /* AboutViewController.swift */; };
 		EDA8FA11223DB6F00001682E /* RecommendationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDA8FA10223DB6F00001682E /* RecommendationsViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -41,7 +40,6 @@
 		EDA8FA08223DB6800001682E /* DashboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardViewController.swift; sourceTree = "<group>"; };
 		EDA8FA0A223DB6C50001682E /* CheckInViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CheckInViewController.swift; sourceTree = "<group>"; };
 		EDA8FA0C223DB6D20001682E /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
-		EDA8FA0E223DB6E20001682E /* AboutViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AboutViewController.swift; sourceTree = "<group>"; };
 		EDA8FA10223DB6F00001682E /* RecommendationsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecommendationsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -82,7 +80,6 @@
 				EDA8FA08223DB6800001682E /* DashboardViewController.swift */,
 				EDA8FA0A223DB6C50001682E /* CheckInViewController.swift */,
 				EDA8FA0C223DB6D20001682E /* ProfileViewController.swift */,
-				EDA8FA0E223DB6E20001682E /* AboutViewController.swift */,
 				EDA8FA10223DB6F00001682E /* RecommendationsViewController.swift */,
 				EDA8F9C7223BA9580001682E /* Main.storyboard */,
 				EDA8F9F9223DB5C00001682E /* Dashboard.storyboard */,
@@ -190,7 +187,6 @@
 				EDA8FA0B223DB6C50001682E /* CheckInViewController.swift in Sources */,
 				EDA8FA0D223DB6D20001682E /* ProfileViewController.swift in Sources */,
 				EDA8FA11223DB6F00001682E /* RecommendationsViewController.swift in Sources */,
-				EDA8FA0F223DB6E20001682E /* AboutViewController.swift in Sources */,
 				EDA8FA09223DB6810001682E /* DashboardViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

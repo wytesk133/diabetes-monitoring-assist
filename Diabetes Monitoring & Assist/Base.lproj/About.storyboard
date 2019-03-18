@@ -13,22 +13,124 @@
         <!--About-->
         <scene sceneID="iA5-D9-nDD">
             <objects>
-                <viewController storyboardIdentifier="AboutViewController" id="Ugl-Yn-jnL" customClass="AboutViewController" customModule="Diabetes_Monitoring___Assist" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="AboutViewController" id="Ugl-Yn-jnL" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="mvI-Op-CyX">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="About" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aed-9L-Akb">
-                                <rect key="frame" x="164" y="323" width="47" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="P1O-iv-l7J">
+                                <rect key="frame" x="0.0" y="20" width="375" height="598"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pxB-p6-uzW">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="1104"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Diabetes Monitoring &amp; Assist" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="MT0-VU-box">
+                                                <rect key="frame" x="16" y="16" width="343" height="41"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="34"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" editable="NO" text="A project in the Winter 2019 offering of CS 125 (Next Generation Search Systems) at the University of California, Irvine" translatesAutoresizingMaskIntoConstraints="NO" id="VgR-0O-4k7">
+                                                <rect key="frame" x="16" y="73" width="343" height="77"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <fontDescription key="fontDescription" type="italicSystem" pointSize="17"/>
+                                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                                <dataDetectorType key="dataDetectorTypes" link="YES"/>
+                                            </textView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="About the Project" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uXn-XC-hI8">
+                                                <rect key="frame" x="16" y="166" width="343" height="21"/>
+                                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lrz-2i-7eC">
+                                                <rect key="frame" x="16" y="203" width="343" height="320.5"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <string key="text">Our group has developed a mobile application that will help diabetic individuals keep track of the their food intake and exercise. The application’s goal is to be able to suggest healthy recipes and workout schedules for the individual based on research specifically done for diabetics. We have chosen to tackle this problem because diabetes is a huge problem in the United States and a worldwide epidemic. Statistics has shown that 1 in 11 adults have diabetes; that accounts to over 415 million people. We hope that with our application can help improve the lives of people living with this condition.</string>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                            </textView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Team Member" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="259-gm-R4R">
+                                                <rect key="frame" x="16" y="539.5" width="343" height="21"/>
+                                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bdX-Us-XgZ">
+                                                <rect key="frame" x="16" y="576.5" width="343" height="97.5"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <string key="text">Andre Ace Aquiler - aaquiler@uci.edu
+Jason Padilla - jpadill3@uci.edu
+Kunal Kathuria - kkathuri@uci.edu
+Wyte Krongapiradee - wkrongap@uci.edu</string>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                                <dataDetectorType key="dataDetectorTypes" link="YES"/>
+                                            </textView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Attributions" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pl0-cm-yEF">
+                                                <rect key="frame" x="16" y="690" width="343" height="21"/>
+                                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="1f5-Fs-yo1">
+                                                <rect key="frame" x="16" y="727" width="343" height="361"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <string key="text">Glyphs from Icons8 https://icons8.com/ios
+ Maps SDK from MapQuest https://developer.mapquest.com/documentation/maps-sdk/ios/v4.0/
+ BMI Table from The National Heart, Lung, and Blood Institute (NHLBI) https://www.nhlbi.nih.gov/health/educational/lose_wt/BMI/bmi_tbl.htm
+ Food Search powered by Nutritionix https://www.nutritionix.com/business/api
+ Tutorials on raywenderlich.com https://www.raywenderlich.com/</string>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                                <dataDetectorType key="dataDetectorTypes" link="YES"/>
+                                            </textView>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstItem="1f5-Fs-yo1" firstAttribute="top" secondItem="Pl0-cm-yEF" secondAttribute="bottom" constant="16" id="6gF-ID-tfU"/>
+                                            <constraint firstItem="1f5-Fs-yo1" firstAttribute="leading" secondItem="pxB-p6-uzW" secondAttribute="leading" constant="16" id="7oU-4W-tCA"/>
+                                            <constraint firstItem="uXn-XC-hI8" firstAttribute="leading" secondItem="pxB-p6-uzW" secondAttribute="leading" constant="16" id="9lE-tB-DyD"/>
+                                            <constraint firstItem="Lrz-2i-7eC" firstAttribute="top" secondItem="uXn-XC-hI8" secondAttribute="bottom" constant="16" id="9t4-xz-5eh"/>
+                                            <constraint firstItem="Pl0-cm-yEF" firstAttribute="leading" secondItem="pxB-p6-uzW" secondAttribute="leading" constant="16" id="D8X-1p-keN"/>
+                                            <constraint firstItem="259-gm-R4R" firstAttribute="top" secondItem="Lrz-2i-7eC" secondAttribute="bottom" constant="16" id="Dbb-mA-U7c"/>
+                                            <constraint firstAttribute="trailing" secondItem="Pl0-cm-yEF" secondAttribute="trailing" constant="16" id="ESc-gP-Pi2"/>
+                                            <constraint firstItem="VgR-0O-4k7" firstAttribute="top" secondItem="MT0-VU-box" secondAttribute="bottom" constant="16" id="F60-cT-Xdb"/>
+                                            <constraint firstItem="VgR-0O-4k7" firstAttribute="leading" secondItem="pxB-p6-uzW" secondAttribute="leading" constant="16" id="FVX-Si-fcE"/>
+                                            <constraint firstAttribute="trailing" secondItem="uXn-XC-hI8" secondAttribute="trailing" constant="16" id="GBW-N8-l7k"/>
+                                            <constraint firstAttribute="trailing" secondItem="259-gm-R4R" secondAttribute="trailing" constant="16" id="Iic-Aj-Hif"/>
+                                            <constraint firstAttribute="trailing" secondItem="VgR-0O-4k7" secondAttribute="trailing" constant="16" id="PYW-tC-D3c"/>
+                                            <constraint firstAttribute="trailing" secondItem="1f5-Fs-yo1" secondAttribute="trailing" constant="16" id="R8X-gM-g5F"/>
+                                            <constraint firstItem="259-gm-R4R" firstAttribute="leading" secondItem="pxB-p6-uzW" secondAttribute="leading" constant="16" id="Uxt-Kf-zrB"/>
+                                            <constraint firstAttribute="trailing" secondItem="MT0-VU-box" secondAttribute="trailing" constant="16" id="Wqo-xX-zis"/>
+                                            <constraint firstItem="Lrz-2i-7eC" firstAttribute="leading" secondItem="pxB-p6-uzW" secondAttribute="leading" constant="16" id="bZU-xZ-Z4F"/>
+                                            <constraint firstItem="uXn-XC-hI8" firstAttribute="top" secondItem="VgR-0O-4k7" secondAttribute="bottom" constant="16" id="c26-KX-Ht9"/>
+                                            <constraint firstItem="Pl0-cm-yEF" firstAttribute="top" secondItem="bdX-Us-XgZ" secondAttribute="bottom" constant="16" id="fBH-ec-ZOP"/>
+                                            <constraint firstAttribute="trailing" secondItem="Lrz-2i-7eC" secondAttribute="trailing" constant="16" id="jvU-dh-8Jd"/>
+                                            <constraint firstAttribute="trailing" secondItem="bdX-Us-XgZ" secondAttribute="trailing" constant="16" id="kgH-2G-Hef"/>
+                                            <constraint firstItem="MT0-VU-box" firstAttribute="top" secondItem="pxB-p6-uzW" secondAttribute="top" constant="16" id="mVn-XO-EyO"/>
+                                            <constraint firstItem="bdX-Us-XgZ" firstAttribute="leading" secondItem="pxB-p6-uzW" secondAttribute="leading" constant="16" id="o6O-t4-4vJ"/>
+                                            <constraint firstItem="MT0-VU-box" firstAttribute="leading" secondItem="pxB-p6-uzW" secondAttribute="leading" constant="16" id="oaY-Qq-1Ty"/>
+                                            <constraint firstAttribute="bottom" secondItem="1f5-Fs-yo1" secondAttribute="bottom" constant="16" id="qFF-oW-UD8"/>
+                                            <constraint firstItem="bdX-Us-XgZ" firstAttribute="top" secondItem="259-gm-R4R" secondAttribute="bottom" constant="16" id="vgv-AN-LpY"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="pxB-p6-uzW" secondAttribute="trailing" id="HHW-uX-nHW"/>
+                                    <constraint firstItem="pxB-p6-uzW" firstAttribute="leading" secondItem="P1O-iv-l7J" secondAttribute="leading" id="Hoh-qZ-yLW"/>
+                                    <constraint firstItem="pxB-p6-uzW" firstAttribute="top" secondItem="P1O-iv-l7J" secondAttribute="top" id="R7R-hA-Y95"/>
+                                    <constraint firstItem="pxB-p6-uzW" firstAttribute="width" secondItem="P1O-iv-l7J" secondAttribute="width" id="ca5-pc-AoY"/>
+                                    <constraint firstAttribute="bottom" secondItem="pxB-p6-uzW" secondAttribute="bottom" id="yL8-iD-5W0"/>
+                                </constraints>
+                            </scrollView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="aed-9L-Akb" firstAttribute="centerY" secondItem="mvI-Op-CyX" secondAttribute="centerY" id="1qX-vC-amU"/>
-                            <constraint firstItem="aed-9L-Akb" firstAttribute="centerX" secondItem="mvI-Op-CyX" secondAttribute="centerX" id="wS4-Jd-Vez"/>
+                            <constraint firstItem="HWF-wN-PtU" firstAttribute="bottom" secondItem="P1O-iv-l7J" secondAttribute="bottom" id="KmJ-6c-e2F"/>
+                            <constraint firstItem="P1O-iv-l7J" firstAttribute="leading" secondItem="HWF-wN-PtU" secondAttribute="leading" id="LzB-fU-dWI"/>
+                            <constraint firstItem="HWF-wN-PtU" firstAttribute="trailing" secondItem="P1O-iv-l7J" secondAttribute="trailing" id="myo-Al-keM"/>
+                            <constraint firstItem="P1O-iv-l7J" firstAttribute="top" secondItem="HWF-wN-PtU" secondAttribute="top" id="uFM-q0-V7x"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="HWF-wN-PtU"/>
                     </view>
@@ -37,7 +139,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="viA-VL-ZXW" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="153" y="158"/>
+            <point key="canvasLocation" x="152.17391304347828" y="156.69642857142856"/>
         </scene>
     </scenes>
     <resources>
