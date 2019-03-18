@@ -18,26 +18,147 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Check In" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qpg-lP-VOS">
-                                <rect key="frame" x="154" y="323" width="67" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TpK-8w-IP0">
+                                <rect key="frame" x="16" y="80" width="343" height="163.5"/>
+                                <color key="backgroundColor" red="0.47394788265228271" green="0.77972310781478882" blue="0.64699059724807739" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="24"/>
+                                <state key="normal" title="Blood Sugar Level">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="20"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <segue destination="xvk-kl-mqr" kind="show" id="s4k-iu-atb"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ie8-zf-5aD">
+                                <rect key="frame" x="16" y="259.5" width="343" height="163"/>
+                                <color key="backgroundColor" red="0.51130002737045288" green="0.77426183223724365" blue="0.90277189016342163" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="24"/>
+                                <state key="normal" title="Food">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="20"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <segue destination="qie-HR-YRm" kind="show" id="iWC-2J-Lom"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vb0-kf-e0F">
+                                <rect key="frame" x="16" y="438.5" width="343" height="163.5"/>
+                                <color key="backgroundColor" red="0.91705375909805298" green="0.28389555215835571" blue="0.2188250720500946" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="24"/>
+                                <state key="normal" title="Exercises">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="20"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <segue destination="P3Z-am-yOu" kind="show" id="pdv-rg-F1W"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="qpg-lP-VOS" firstAttribute="centerY" secondItem="u2H-ZO-Ni0" secondAttribute="centerY" id="Cxx-T3-OUJ"/>
-                            <constraint firstItem="qpg-lP-VOS" firstAttribute="centerX" secondItem="u2H-ZO-Ni0" secondAttribute="centerX" id="DUb-YE-igK"/>
+                            <constraint firstItem="TpK-8w-IP0" firstAttribute="top" secondItem="Ywc-l2-Gcb" secondAttribute="top" constant="16" id="9s7-Go-SEa"/>
+                            <constraint firstItem="Ywc-l2-Gcb" firstAttribute="trailing" secondItem="Ie8-zf-5aD" secondAttribute="trailing" constant="16" id="CZi-13-NqW"/>
+                            <constraint firstItem="Vb0-kf-e0F" firstAttribute="leading" secondItem="Ywc-l2-Gcb" secondAttribute="leading" constant="16" id="FOy-6f-YMh"/>
+                            <constraint firstItem="Ywc-l2-Gcb" firstAttribute="trailing" secondItem="TpK-8w-IP0" secondAttribute="trailing" constant="16" id="G4Q-Ic-Wwo"/>
+                            <constraint firstItem="Ie8-zf-5aD" firstAttribute="leading" secondItem="Ywc-l2-Gcb" secondAttribute="leading" constant="16" id="HH8-Og-WPG"/>
+                            <constraint firstItem="Vb0-kf-e0F" firstAttribute="height" secondItem="TpK-8w-IP0" secondAttribute="height" id="XzS-ci-CGd"/>
+                            <constraint firstItem="Ywc-l2-Gcb" firstAttribute="trailing" secondItem="Vb0-kf-e0F" secondAttribute="trailing" constant="16" id="m8O-Dx-0Ih"/>
+                            <constraint firstItem="Ywc-l2-Gcb" firstAttribute="bottom" secondItem="Vb0-kf-e0F" secondAttribute="bottom" constant="16" id="nHQ-fQ-eu9"/>
+                            <constraint firstItem="Ie8-zf-5aD" firstAttribute="height" secondItem="TpK-8w-IP0" secondAttribute="height" id="rAo-lb-Cdb"/>
+                            <constraint firstItem="Vb0-kf-e0F" firstAttribute="top" secondItem="Ie8-zf-5aD" secondAttribute="bottom" constant="16" id="uRu-Kx-8Ng"/>
+                            <constraint firstItem="TpK-8w-IP0" firstAttribute="leading" secondItem="Ywc-l2-Gcb" secondAttribute="leading" constant="16" id="wed-Mn-XHw"/>
+                            <constraint firstItem="Ie8-zf-5aD" firstAttribute="top" secondItem="TpK-8w-IP0" secondAttribute="bottom" constant="16" id="xBe-Bm-nqV"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Ywc-l2-Gcb"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Check In" image="health_sources" id="CI5-Di-cLy"/>
+                    <navigationItem key="navigationItem" title="Check In" id="wej-Kl-Gyi"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XA1-XV-iwl" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="140" y="152"/>
+            <point key="canvasLocation" x="474" y="133"/>
+        </scene>
+        <!--Exercises-->
+        <scene sceneID="QpZ-eE-K5F">
+            <objects>
+                <viewController id="P3Z-am-yOu" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="aKK-n9-pdg">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="K23-kW-h7P"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Exercises" id="WqP-Oa-aal">
+                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="fIE-O9-9JJ"/>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="XUo-y4-ySM" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1358" y="643"/>
+        </scene>
+        <!--Food-->
+        <scene sceneID="Q9B-MH-4mf">
+            <objects>
+                <viewController id="qie-HR-YRm" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="PoJ-Ts-QRo">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="z9p-4l-AkJ"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Food" id="GrC-ML-vff"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ovr-pu-0Dr" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2180" y="133"/>
+        </scene>
+        <!--Blood Sugar Level-->
+        <scene sceneID="iMg-er-fAS">
+            <objects>
+                <viewController id="xvk-kl-mqr" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="mge-GW-UH1">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="gTk-c1-fT9"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Blood Sugar Level" id="rKg-R8-43K">
+                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="Ppm-h7-Rfc"/>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="XJm-qv-hpz" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1358" y="-341"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="3t0-QF-eqB">
+            <objects>
+                <navigationController storyboardIdentifier="CheckInNavigationController" id="K8Y-Yt-NM8" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="WJu-VS-eVt">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="zvz-CP-pjq" kind="relationship" relationship="rootViewController" id="zQi-3D-q5l"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jh0-9R-W7T" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-281" y="133"/>
         </scene>
     </scenes>
     <resources>

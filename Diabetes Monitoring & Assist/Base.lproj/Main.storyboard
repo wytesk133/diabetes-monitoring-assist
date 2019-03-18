@@ -40,10 +40,10 @@
             </objects>
             <point key="canvasLocation" x="786" y="-288"/>
         </scene>
-        <!--CheckInViewController-->
+        <!--CheckInNavigationController-->
         <scene sceneID="2Yf-fW-K1f">
             <objects>
-                <viewControllerPlaceholder storyboardName="CheckIn" referencedIdentifier="CheckInViewController" id="eQb-cH-mDZ" sceneMemberID="viewController">
+                <viewControllerPlaceholder storyboardName="CheckIn" referencedIdentifier="CheckInNavigationController" id="eQb-cH-mDZ" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Item" id="5zB-7s-ETc"/>
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5ab-S7-DxM" userLabel="First Responder" sceneMemberID="firstResponder"/>
