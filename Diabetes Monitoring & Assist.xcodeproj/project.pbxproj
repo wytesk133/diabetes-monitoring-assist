@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0C760CA2224301F500904AA4 /* ExerciseView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C760CA1224301F500904AA4 /* ExerciseView.m */; };
+		0C760CA62243021600904AA4 /* CheckInController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C760CA52243021600904AA4 /* CheckInController.m */; };
+		0C760CA92243022900904AA4 /* BloodSugarView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C760CA82243022900904AA4 /* BloodSugarView.m */; };
+		0C760CAB2243023100904AA4 /* EnterInforViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C760CAA2243023100904AA4 /* EnterInforViewController.m */; };
+		0C760CAD2243023C00904AA4 /* database.sql in Resources */ = {isa = PBXBuildFile; fileRef = 0C760CAC2243023C00904AA4 /* database.sql */; };
+		0C760CB02243024900904AA4 /* DBManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C760CAF2243024900904AA4 /* DBManager.m */; };
+		0C760CB22243025800904AA4 /* CheckIn.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0C760CB12243025800904AA4 /* CheckIn.storyboard */; };
 		ED44157A223FB70A00BB5D44 /* Food.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED441579223FB70A00BB5D44 /* Food.swift */; };
 		ED44157C223FB72A00BB5D44 /* FoodTableRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED44157B223FB72A00BB5D44 /* FoodTableRow.swift */; };
 		ED44157E223FB74300BB5D44 /* FoodApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED44157D223FB74300BB5D44 /* FoodApi.swift */; };
@@ -27,6 +34,19 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0C760C9F224301DF00904AA4 /* Diabetes Monitoring & Assist-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Diabetes Monitoring & Assist-Bridging-Header.h"; sourceTree = "<group>"; };
+		0C760CA0224301EC00904AA4 /* EnterInforViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EnterInforViewController.h; sourceTree = "<group>"; };
+		0C760CA1224301F500904AA4 /* ExerciseView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ExerciseView.m; sourceTree = "<group>"; };
+		0C760CA3224301FD00904AA4 /* BloodSugarView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BloodSugarView.h; sourceTree = "<group>"; };
+		0C760CA42243020A00904AA4 /* DBManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DBManager.h; sourceTree = "<group>"; };
+		0C760CA52243021600904AA4 /* CheckInController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CheckInController.m; sourceTree = "<group>"; };
+		0C760CA72243021E00904AA4 /* ExerciseView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExerciseView.h; sourceTree = "<group>"; };
+		0C760CA82243022900904AA4 /* BloodSugarView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BloodSugarView.m; sourceTree = "<group>"; };
+		0C760CAA2243023100904AA4 /* EnterInforViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EnterInforViewController.m; sourceTree = "<group>"; };
+		0C760CAC2243023C00904AA4 /* database.sql */ = {isa = PBXFileReference; lastKnownFileType = file; path = database.sql; sourceTree = "<group>"; };
+		0C760CAE2243024400904AA4 /* CheckInController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CheckInController.h; sourceTree = "<group>"; };
+		0C760CAF2243024900904AA4 /* DBManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DBManager.m; sourceTree = "<group>"; };
+		0C760CB12243025800904AA4 /* CheckIn.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = CheckIn.storyboard; sourceTree = "<group>"; };
 		ED441579223FB70A00BB5D44 /* Food.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Food.swift; sourceTree = "<group>"; };
 		ED44157B223FB72A00BB5D44 /* FoodTableRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodTableRow.swift; sourceTree = "<group>"; };
 		ED44157D223FB74300BB5D44 /* FoodApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodApi.swift; sourceTree = "<group>"; };
@@ -81,7 +101,19 @@
 		EDA8F9C0223BA9580001682E /* Diabetes Monitoring & Assist */ = {
 			isa = PBXGroup;
 			children = (
+				0C760CAC2243023C00904AA4 /* database.sql */,
+				0C760CA0224301EC00904AA4 /* EnterInforViewController.h */,
+				0C760CAA2243023100904AA4 /* EnterInforViewController.m */,
+				0C760CA1224301F500904AA4 /* ExerciseView.m */,
+				0C760CA72243021E00904AA4 /* ExerciseView.h */,
+				0C760CA3224301FD00904AA4 /* BloodSugarView.h */,
+				0C760CA82243022900904AA4 /* BloodSugarView.m */,
+				0C760CA42243020A00904AA4 /* DBManager.h */,
+				0C760CAF2243024900904AA4 /* DBManager.m */,
+				0C760CAE2243024400904AA4 /* CheckInController.h */,
+				0C760CA52243021600904AA4 /* CheckInController.m */,
 				EDA8F9FC223DB5E20001682E /* CheckIn.storyboard */,
+				0C760CB12243025800904AA4 /* CheckIn.storyboard */,
 				EDA8F9D8223BABCD0001682E /* Diabetes Monitoring & Assist.entitlements */,
 				EDA8F9C1223BA9580001682E /* AppDelegate.swift */,
 				EDA8FA08223DB6800001682E /* DashboardViewController.swift */,
@@ -99,6 +131,7 @@
 				ED44157B223FB72A00BB5D44 /* FoodTableRow.swift */,
 				ED44157D223FB74300BB5D44 /* FoodApi.swift */,
 				ED44157F223FB75000BB5D44 /* FoodCheckInViewController.swift */,
+				0C760C9F224301DF00904AA4 /* Diabetes Monitoring & Assist-Bridging-Header.h */,
 			);
 			path = "Diabetes Monitoring & Assist";
 			sourceTree = "<group>";
@@ -174,6 +207,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0C760CAD2243023C00904AA4 /* database.sql in Resources */,
 				EDA8F9CE223BA95A0001682E /* LaunchScreen.storyboard in Resources */,
 				EDA8FA01223DB6090001682E /* Recommendations.storyboard in Resources */,
 				EDA8FA07223DB61F0001682E /* About.storyboard in Resources */,
@@ -181,6 +215,7 @@
 				EDA8F9C9223BA9580001682E /* Main.storyboard in Resources */,
 				EDA8F9FE223DB5E20001682E /* CheckIn.storyboard in Resources */,
 				EDA8FA04223DB6150001682E /* Profile.storyboard in Resources */,
+				0C760CB22243025800904AA4 /* CheckIn.storyboard in Resources */,
 				EDA8F9FB223DB5C00001682E /* Dashboard.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -193,6 +228,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				EDA8F9C2223BA9580001682E /* AppDelegate.swift in Sources */,
+				0C760CA62243021600904AA4 /* CheckInController.m in Sources */,
+				0C760CA2224301F500904AA4 /* ExerciseView.m in Sources */,
+				0C760CA92243022900904AA4 /* BloodSugarView.m in Sources */,
+				0C760CAB2243023100904AA4 /* EnterInforViewController.m in Sources */,
 				ED44157C223FB72A00BB5D44 /* FoodTableRow.swift in Sources */,
 				EDA8FA0D223DB6D20001682E /* ProfileViewController.swift in Sources */,
 				ED44157A223FB70A00BB5D44 /* Food.swift in Sources */,
@@ -200,6 +239,7 @@
 				ED44157E223FB74300BB5D44 /* FoodApi.swift in Sources */,
 				ED441580223FB75000BB5D44 /* FoodCheckInViewController.swift in Sources */,
 				EDA8FA09223DB6810001682E /* DashboardViewController.swift in Sources */,
+				0C760CB02243024900904AA4 /* DBManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

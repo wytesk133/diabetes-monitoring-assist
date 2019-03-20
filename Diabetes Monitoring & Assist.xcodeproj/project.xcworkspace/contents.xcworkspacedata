@@ -1,7 +1,437 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Workspace
    version = "1.0">
+   <Group
+      location = "group:../../../.."
+      name = "..">
+      <Group
+         location = "group:Health App"
+         name = "Health App">
+         <FileRef
+            location = "group:EditInfoViewController.h">
+         </FileRef>
+         <FileRef
+            location = "group:checkIn.sql">
+         </FileRef>
+         <Group
+            location = "group:checkInDBS"
+            name = "checkInDBS">
+            <FileRef
+               location = "group:checkIn.sql">
+            </FileRef>
+         </Group>
+         <Group
+            location = "group:Health App"
+            name = "Health App">
+            <FileRef
+               location = "group:FirstViewController.swift">
+            </FileRef>
+            <Group
+               location = "group:Assets.xcassets"
+               name = "Assets.xcassets">
+               <Group
+                  location = "group:AppIcon.appiconset"
+                  name = "AppIcon.appiconset">
+                  <FileRef
+                     location = "group:Contents.json">
+                  </FileRef>
+               </Group>
+               <Group
+                  location = "group:second.imageset"
+                  name = "second.imageset">
+                  <FileRef
+                     location = "group:second.pdf">
+                  </FileRef>
+                  <FileRef
+                     location = "group:Contents.json">
+                  </FileRef>
+               </Group>
+               <Group
+                  location = "group:first.imageset"
+                  name = "first.imageset">
+                  <FileRef
+                     location = "group:Contents.json">
+                  </FileRef>
+                  <FileRef
+                     location = "group:first.pdf">
+                  </FileRef>
+               </Group>
+               <FileRef
+                  location = "group:Contents.json">
+               </FileRef>
+            </Group>
+            <Group
+               location = "group:Base.lproj"
+               name = "Base.lproj">
+               <FileRef
+                  location = "group:LaunchScreen.storyboard">
+               </FileRef>
+               <FileRef
+                  location = "group:Main.storyboard">
+               </FileRef>
+            </Group>
+            <FileRef
+               location = "group:AppDelegate.swift">
+            </FileRef>
+            <FileRef
+               location = "group:SecondViewController.swift">
+            </FileRef>
+            <FileRef
+               location = "group:Info.plist">
+            </FileRef>
+         </Group>
+         <FileRef
+            location = "group:Health App-Bridging-Header.h">
+         </FileRef>
+         <Group
+            location = "group:Health AppTests"
+            name = "Health AppTests">
+            <FileRef
+               location = "group:Health_AppTests.swift">
+            </FileRef>
+            <FileRef
+               location = "group:Info.plist">
+            </FileRef>
+         </Group>
+         <FileRef
+            location = "group:ViewController.m">
+         </FileRef>
+         <FileRef
+            location = "group:DBManager.h">
+         </FileRef>
+         <FileRef
+            location = "group:EditInfoViewController.m">
+         </FileRef>
+         <FileRef
+            location = "group:Health App.xcodeproj">
+         </FileRef>
+         <FileRef
+            location = "group:DBManager.m">
+         </FileRef>
+         <FileRef
+            location = "group:ViewController.h">
+         </FileRef>
+      </Group>
+      <Group
+         location = "group:DiabetesMonitoringAssist"
+         name = "DiabetesMonitoringAssist">
+         <Group
+            location = "group:Update 2"
+            name = "Update 2">
+            <Group
+               location = "group:diabetes-monitoring-assist"
+               name = "diabetes-monitoring-assist">
+               <Group
+                  location = "group:Diabetes Monitoring &amp; Assist"
+                  name = "Diabetes Monitoring &amp; Assist">
+                  <FileRef
+                     location = "group:DashboardViewController.swift">
+                  </FileRef>
+                  <FileRef
+                     location = "group:RecommendationsViewController.swift">
+                  </FileRef>
+                  <Group
+                     location = "group:Assets.xcassets"
+                     name = "Assets.xcassets">
+                     <Group
+                        location = "group:health_sources.imageset"
+                        name = "health_sources.imageset">
+                        <FileRef
+                           location = "group:health_sources.pdf">
+                        </FileRef>
+                        <FileRef
+                           location = "group:Contents.json">
+                        </FileRef>
+                     </Group>
+                     <Group
+                        location = "group:for_you.imageset"
+                        name = "for_you.imageset">
+                        <FileRef
+                           location = "group:for_you.pdf">
+                        </FileRef>
+                        <FileRef
+                           location = "group:Contents.json">
+                        </FileRef>
+                     </Group>
+                     <Group
+                        location = "group:AppIcon.appiconset"
+                        name = "AppIcon.appiconset">
+                        <FileRef
+                           location = "group:Contents.json">
+                        </FileRef>
+                     </Group>
+                     <Group
+                        location = "group:training.imageset"
+                        name = "training.imageset">
+                        <FileRef
+                           location = "group:Contents.json">
+                        </FileRef>
+                        <FileRef
+                           location = "group:training.pdf">
+                        </FileRef>
+                     </Group>
+                     <Group
+                        location = "group:contact_card.imageset"
+                        name = "contact_card.imageset">
+                        <FileRef
+                           location = "group:contact_card.pdf">
+                        </FileRef>
+                        <FileRef
+                           location = "group:Contents.json">
+                        </FileRef>
+                     </Group>
+                     <FileRef
+                        location = "group:Contents.json">
+                     </FileRef>
+                     <Group
+                        location = "group:about.imageset"
+                        name = "about.imageset">
+                        <FileRef
+                           location = "group:Contents.json">
+                        </FileRef>
+                        <FileRef
+                           location = "group:about.pdf">
+                        </FileRef>
+                     </Group>
+                  </Group>
+                  <FileRef
+                     location = "group:FoodCheckInViewController.swift">
+                  </FileRef>
+                  <Group
+                     location = "group:Base.lproj"
+                     name = "Base.lproj">
+                     <FileRef
+                        location = "group:Recommendations.storyboard">
+                     </FileRef>
+                     <FileRef
+                        location = "group:LaunchScreen.storyboard">
+                     </FileRef>
+                     <FileRef
+                        location = "group:CheckIn.storyboard">
+                     </FileRef>
+                     <FileRef
+                        location = "group:Profile.storyboard">
+                     </FileRef>
+                     <FileRef
+                        location = "group:Main.storyboard">
+                     </FileRef>
+                     <FileRef
+                        location = "group:About.storyboard">
+                     </FileRef>
+                     <FileRef
+                        location = "group:Dashboard.storyboard">
+                     </FileRef>
+                  </Group>
+                  <FileRef
+                     location = "group:FoodApi.swift">
+                  </FileRef>
+                  <FileRef
+                     location = "group:Diabetes Monitoring &amp; Assist.entitlements">
+                  </FileRef>
+                  <FileRef
+                     location = "group:Food.swift">
+                  </FileRef>
+                  <FileRef
+                     location = "group:AppDelegate.swift">
+                  </FileRef>
+                  <FileRef
+                     location = "group:ProfileViewController.swift">
+                  </FileRef>
+                  <FileRef
+                     location = "group:FoodTableRow.swift">
+                  </FileRef>
+                  <FileRef
+                     location = "group:Info.plist">
+                  </FileRef>
+               </Group>
+               <FileRef
+                  location = "group:README.md">
+               </FileRef>
+               <FileRef
+                  location = "group:Diabetes Monitoring &amp; Assist.xcodeproj">
+               </FileRef>
+            </Group>
+         </Group>
+         <Group
+            location = "group:diabetes-monitoring-assist"
+            name = "diabetes-monitoring-assist">
+         </Group>
+         <Group
+            location = "group:Update 1"
+            name = "Update 1">
+            <Group
+               location = "group:diabetes-monitoring-assist"
+               name = "diabetes-monitoring-assist">
+               <Group
+                  location = "group:Diabetes Monitoring &amp; Assist"
+                  name = "Diabetes Monitoring &amp; Assist">
+                  <FileRef
+                     location = "group:BloodSugarView.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:ExerciseView.m">
+                  </FileRef>
+                  <FileRef
+                     location = "group:DashboardViewController.swift">
+                  </FileRef>
+                  <FileRef
+                     location = "group:EnterInforViewController.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:Diabetes Monitoring &amp; Assist-Bridging-Header.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:RecommendationsViewController.swift">
+                  </FileRef>
+                  <Group
+                     location = "group:Assets.xcassets"
+                     name = "Assets.xcassets">
+                     <Group
+                        location = "group:health_sources.imageset"
+                        name = "health_sources.imageset">
+                        <FileRef
+                           location = "group:health_sources.pdf">
+                        </FileRef>
+                        <FileRef
+                           location = "group:Contents.json">
+                        </FileRef>
+                     </Group>
+                     <Group
+                        location = "group:for_you.imageset"
+                        name = "for_you.imageset">
+                        <FileRef
+                           location = "group:for_you.pdf">
+                        </FileRef>
+                        <FileRef
+                           location = "group:Contents.json">
+                        </FileRef>
+                     </Group>
+                     <Group
+                        location = "group:AppIcon.appiconset"
+                        name = "AppIcon.appiconset">
+                        <FileRef
+                           location = "group:Contents.json">
+                        </FileRef>
+                     </Group>
+                     <Group
+                        location = "group:training.imageset"
+                        name = "training.imageset">
+                        <FileRef
+                           location = "group:Contents.json">
+                        </FileRef>
+                        <FileRef
+                           location = "group:training.pdf">
+                        </FileRef>
+                     </Group>
+                     <Group
+                        location = "group:contact_card.imageset"
+                        name = "contact_card.imageset">
+                        <FileRef
+                           location = "group:contact_card.pdf">
+                        </FileRef>
+                        <FileRef
+                           location = "group:Contents.json">
+                        </FileRef>
+                     </Group>
+                     <FileRef
+                        location = "group:Contents.json">
+                     </FileRef>
+                     <Group
+                        location = "group:about.imageset"
+                        name = "about.imageset">
+                        <FileRef
+                           location = "group:Contents.json">
+                        </FileRef>
+                        <FileRef
+                           location = "group:about.pdf">
+                        </FileRef>
+                     </Group>
+                  </Group>
+                  <FileRef
+                     location = "group:FoodCheckInViewController.swift">
+                  </FileRef>
+                  <FileRef
+                     location = "group:DBManager.h">
+                  </FileRef>
+                  <Group
+                     location = "group:Base.lproj"
+                     name = "Base.lproj">
+                     <FileRef
+                        location = "group:Recommendations.storyboard">
+                     </FileRef>
+                     <FileRef
+                        location = "group:LaunchScreen.storyboard">
+                     </FileRef>
+                     <FileRef
+                        location = "group:CheckIn.storyboard">
+                     </FileRef>
+                     <FileRef
+                        location = "group:Profile.storyboard">
+                     </FileRef>
+                     <FileRef
+                        location = "group:Main.storyboard">
+                     </FileRef>
+                     <FileRef
+                        location = "group:About.storyboard">
+                     </FileRef>
+                     <FileRef
+                        location = "group:Dashboard.storyboard">
+                     </FileRef>
+                  </Group>
+                  <FileRef
+                     location = "group:CheckInController.m">
+                  </FileRef>
+                  <FileRef
+                     location = "group:ExerciseView.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:BloodSugarView.m">
+                  </FileRef>
+                  <FileRef
+                     location = "group:FoodApi.swift">
+                  </FileRef>
+                  <FileRef
+                     location = "group:EnterInforViewController.m">
+                  </FileRef>
+                  <FileRef
+                     location = "group:Diabetes Monitoring &amp; Assist.entitlements">
+                  </FileRef>
+                  <FileRef
+                     location = "group:Food.swift">
+                  </FileRef>
+                  <FileRef
+                     location = "group:database.sql">
+                  </FileRef>
+                  <FileRef
+                     location = "group:AppDelegate.swift">
+                  </FileRef>
+                  <FileRef
+                     location = "group:ProfileViewController.swift">
+                  </FileRef>
+                  <FileRef
+                     location = "group:FoodTableRow.swift">
+                  </FileRef>
+                  <FileRef
+                     location = "group:CheckInController.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:Info.plist">
+                  </FileRef>
+                  <FileRef
+                     location = "group:DBManager.m">
+                  </FileRef>
+               </Group>
+               <FileRef
+                  location = "group:README.md">
+               </FileRef>
+               <FileRef
+                  location = "group:Diabetes Monitoring &amp; Assist.xcodeproj">
+               </FileRef>
+            </Group>
+         </Group>
+      </Group>
+   </Group>
    <FileRef
-      location = "self:Diabetes Monitoring &amp; Assist.xcodeproj">
+      location = "self:">
    </FileRef>
 </Workspace>
