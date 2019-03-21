@@ -23,7 +23,7 @@
                                 <rect key="frame" x="16" y="80" width="343" height="163.5"/>
                                 <color key="backgroundColor" red="0.47394788265228271" green="0.77972310781478882" blue="0.64699059724807739" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" type="system" weight="medium" pointSize="24"/>
-                                <state key="normal" title="Blood Sugar Level">
+                                <state key="normal" title="Blood Glucose Level">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <userDefinedRuntimeAttributes>
@@ -55,7 +55,7 @@
                                 <rect key="frame" x="16" y="438.5" width="343" height="163.5"/>
                                 <color key="backgroundColor" red="0.91705375909805298" green="0.28389555215835571" blue="0.2188250720500946" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" type="system" weight="medium" pointSize="24"/>
-                                <state key="normal" title="Exercises">
+                                <state key="normal" title="Exercises Distance">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <userDefinedRuntimeAttributes>
@@ -64,7 +64,7 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
-                                    <segue destination="P3Z-am-yOu" kind="show" id="pdv-rg-F1W"/>
+                                    <segue destination="bHx-6Z-M10" kind="show" id="eay-7G-zMP"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -94,22 +94,167 @@
             <point key="canvasLocation" x="474" y="133"/>
         </scene>
         <!--Exercises-->
-        <scene sceneID="QpZ-eE-K5F">
+        <scene sceneID="oZl-AY-ZuD">
             <objects>
-                <viewController id="P3Z-am-yOu" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="aKK-n9-pdg">
+                <viewController id="bHx-6Z-M10" customClass="ExerciseListViewController" customModule="Diabetes_Monitoring___Assist" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="2b4-rM-f1T">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="72" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="YFk-45-Dp4">
+                                <rect key="frame" x="0.0" y="64" width="375" height="554"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="ExerciseCell" id="Xza-tx-DZH" customClass="ExerciseTableRow" customModule="Diabetes_Monitoring___Assist" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="72"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Xza-tx-DZH" id="ptw-Vh-HbO">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="71.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Distance" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F8e-Ox-gFi">
+                                                    <rect key="frame" x="15" y="11" width="345" height="21"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="21" id="I62-37-WUX"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Date" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zhf-Sv-zdi">
+                                                    <rect key="frame" x="15" y="40" width="345" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="F8e-Ox-gFi" firstAttribute="top" secondItem="ptw-Vh-HbO" secondAttribute="topMargin" id="3dw-cq-2GS"/>
+                                                <constraint firstItem="F8e-Ox-gFi" firstAttribute="leading" secondItem="ptw-Vh-HbO" secondAttribute="leadingMargin" id="LHc-bs-BMA"/>
+                                                <constraint firstItem="Zhf-Sv-zdi" firstAttribute="leading" secondItem="ptw-Vh-HbO" secondAttribute="leadingMargin" id="YZU-qX-Pjt"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="F8e-Ox-gFi" secondAttribute="trailing" id="b9r-YC-aP2"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="Zhf-Sv-zdi" secondAttribute="trailing" id="d2o-vb-PJ7"/>
+                                                <constraint firstItem="Zhf-Sv-zdi" firstAttribute="top" secondItem="F8e-Ox-gFi" secondAttribute="bottom" constant="8" id="sWY-vL-s5h"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="date" destination="Zhf-Sv-zdi" id="ZDo-DU-Pep"/>
+                                            <outlet property="distance" destination="F8e-Ox-gFi" id="Nj5-T2-gI5"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="bHx-6Z-M10" id="ieE-KY-bgW"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <viewLayoutGuide key="safeArea" id="K23-kW-h7P"/>
+                        <constraints>
+                            <constraint firstItem="YFk-45-Dp4" firstAttribute="top" secondItem="QnH-Ip-uj8" secondAttribute="top" id="8si-YX-3ig"/>
+                            <constraint firstItem="YFk-45-Dp4" firstAttribute="leading" secondItem="QnH-Ip-uj8" secondAttribute="leading" id="Ogr-4C-SHO"/>
+                            <constraint firstItem="YFk-45-Dp4" firstAttribute="trailing" secondItem="QnH-Ip-uj8" secondAttribute="trailing" id="U8o-zJ-mya"/>
+                            <constraint firstItem="QnH-Ip-uj8" firstAttribute="bottom" secondItem="YFk-45-Dp4" secondAttribute="bottom" id="iGw-az-x02"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="QnH-Ip-uj8"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Exercises" id="WqP-Oa-aal">
-                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="fIE-O9-9JJ"/>
+                    <navigationItem key="navigationItem" title="Exercises" id="Ivx-og-ztB">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="9Je-tP-Gbx">
+                            <connections>
+                                <segue destination="68V-Qo-4tP" kind="show" id="ace-xj-FN2"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="exerciseTableView" destination="YFk-45-Dp4" id="UIA-He-RdR"/>
+                    </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="XUo-y4-ySM" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HKn-Vw-fQT" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1358" y="643"/>
+            <point key="canvasLocation" x="1358" y="609"/>
+        </scene>
+        <!--Enter Exercises-->
+        <scene sceneID="JJs-GK-mei">
+            <objects>
+                <viewController id="68V-Qo-4tP" customClass="ExerciseCheckInViewController" customModule="Diabetes_Monitoring___Assist" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="3rR-6d-jrk">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="KRF-Zt-jmY">
+                                <rect key="frame" x="16" y="117" width="343" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="FVz-xc-zEf"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
+                                <connections>
+                                    <outlet property="delegate" destination="68V-Qo-4tP" id="DT3-Kb-lmx"/>
+                                </connections>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Distance (mi)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0IX-0T-7o6">
+                                <rect key="frame" x="16" y="80" width="343" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="9WK-YE-A0P"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Date Recorded" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="POs-Ss-VXq">
+                                <rect key="frame" x="16" y="163" width="343" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="nmW-ep-V3a"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="3mR-TR-0I0">
+                                <rect key="frame" x="0.0" y="200" width="375" height="162"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="162" id="zND-lY-ZPI"/>
+                                </constraints>
+                                <date key="date" timeIntervalSinceReferenceDate="574856795.85502803">
+                                    <!--2019-03-21 10:26:35 +0000-->
+                                </date>
+                            </datePicker>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="KRF-Zt-jmY" firstAttribute="leading" secondItem="oPa-hN-4EL" secondAttribute="leading" constant="16" id="Aur-0j-92f"/>
+                            <constraint firstItem="KRF-Zt-jmY" firstAttribute="top" secondItem="0IX-0T-7o6" secondAttribute="bottom" constant="16" id="CBr-yz-5uT"/>
+                            <constraint firstItem="3mR-TR-0I0" firstAttribute="top" secondItem="POs-Ss-VXq" secondAttribute="bottom" constant="16" id="EjG-a2-qr4"/>
+                            <constraint firstItem="POs-Ss-VXq" firstAttribute="top" secondItem="KRF-Zt-jmY" secondAttribute="bottom" constant="16" id="LJf-e0-Q9p"/>
+                            <constraint firstItem="0IX-0T-7o6" firstAttribute="top" secondItem="oPa-hN-4EL" secondAttribute="top" constant="16" id="Mrf-3s-wCB"/>
+                            <constraint firstAttribute="trailing" secondItem="0IX-0T-7o6" secondAttribute="trailing" constant="16" id="NqY-QC-bsw"/>
+                            <constraint firstItem="KRF-Zt-jmY" firstAttribute="top" secondItem="0IX-0T-7o6" secondAttribute="bottom" constant="16" id="Uf2-c7-lht"/>
+                            <constraint firstItem="POs-Ss-VXq" firstAttribute="leading" secondItem="oPa-hN-4EL" secondAttribute="leading" constant="16" id="cpQ-bN-P0w"/>
+                            <constraint firstItem="POs-Ss-VXq" firstAttribute="top" secondItem="KRF-Zt-jmY" secondAttribute="bottom" constant="16" id="g2y-QX-wsN"/>
+                            <constraint firstItem="0IX-0T-7o6" firstAttribute="leading" secondItem="oPa-hN-4EL" secondAttribute="leading" constant="16" id="gS2-cJ-Skb"/>
+                            <constraint firstAttribute="trailing" secondItem="POs-Ss-VXq" secondAttribute="trailing" constant="16" id="gfd-g2-twA"/>
+                            <constraint firstItem="3mR-TR-0I0" firstAttribute="top" secondItem="POs-Ss-VXq" secondAttribute="bottom" constant="16" id="hoK-Ap-2WW"/>
+                            <constraint firstAttribute="trailing" secondItem="KRF-Zt-jmY" secondAttribute="trailing" constant="16" id="l3O-3M-RdJ"/>
+                            <constraint firstAttribute="trailing" secondItem="3mR-TR-0I0" secondAttribute="trailing" id="oI8-AR-nqC"/>
+                            <constraint firstItem="3mR-TR-0I0" firstAttribute="leading" secondItem="oPa-hN-4EL" secondAttribute="leading" id="qq9-qx-rm1"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="oPa-hN-4EL"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Enter Exercises" id="cca-PQ-Tsc">
+                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="Dxq-oZ-OCn">
+                            <connections>
+                                <action selector="saveData:" destination="68V-Qo-4tP" id="XVW-Fg-REC"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="datePicker" destination="3mR-TR-0I0" id="TlS-bw-fIX"/>
+                        <outlet property="distance" destination="KRF-Zt-jmY" id="oaj-7Q-LBk"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="o3Y-Sg-FkQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2276" y="609"/>
         </scene>
         <!--Food-->
         <scene sceneID="Q9B-MH-4mf">
@@ -235,9 +380,9 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ovr-pu-0Dr" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2180" y="132.68365817091455"/>
+            <point key="canvasLocation" x="3191" y="133"/>
         </scene>
-        <!--Blood Sugar Level-->
+        <!--Blood Glucose Level-->
         <scene sceneID="iMg-er-fAS">
             <objects>
                 <viewController id="xvk-kl-mqr" customClass="BloodSugarListViewController" customModule="Diabetes_Monitoring___Assist" customModuleProvider="target" sceneMemberID="viewController">
@@ -304,7 +449,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="gTk-c1-fT9"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Blood Sugar Level" id="rKg-R8-43K">
+                    <navigationItem key="navigationItem" title="Blood Glucose Level" id="rKg-R8-43K">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="Ppm-h7-Rfc">
                             <connections>
                                 <segue destination="riV-SF-XvM" kind="show" id="WbK-Cf-dGA"/>
@@ -319,7 +464,7 @@
             </objects>
             <point key="canvasLocation" x="1357.5999999999999" y="-341.37931034482762"/>
         </scene>
-        <!--Enter Data-->
+        <!--Enter Blood Glucose Level-->
         <scene sceneID="5cu-wg-vWP">
             <objects>
                 <viewController id="riV-SF-XvM" customClass="BloodSugarCheckInViewController" customModule="Diabetes_Monitoring___Assist" customModuleProvider="target" sceneMemberID="viewController">
@@ -388,7 +533,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="LM3-PN-kz0"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Enter Data" id="KHM-cW-Lsy">
+                    <navigationItem key="navigationItem" title="Enter Blood Glucose Level" id="KHM-cW-Lsy">
                         <barButtonItem key="rightBarButtonItem" systemItem="save" id="GMa-7Q-eWw">
                             <connections>
                                 <action selector="saveData:" destination="riV-SF-XvM" id="bxD-xg-Wfk"/>
@@ -402,7 +547,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xSX-r0-d3U" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2180" y="-652"/>
+            <point key="canvasLocation" x="2276" y="-341"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="3t0-QF-eqB">
