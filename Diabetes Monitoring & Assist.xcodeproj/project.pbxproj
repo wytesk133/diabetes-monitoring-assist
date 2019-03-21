@@ -28,6 +28,7 @@
 		F06A3CBE22439A7F00322745 /* BloodSugarCheckInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F06A3CBD22439A7F00322745 /* BloodSugarCheckInViewController.swift */; };
 		F06A3CC022439AF300322745 /* BloodSugarListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F06A3CBF22439AF300322745 /* BloodSugarListViewController.swift */; };
 		F06A3CC22243A29200322745 /* BloodSugarTableRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = F06A3CC12243A29200322745 /* BloodSugarTableRow.swift */; };
+		F09F12F62243E3F900BFE022 /* PersonalModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F09F12F52243E3F900BFE022 /* PersonalModel.swift */; };
 		F0C6ABBA2243B216001FB51D /* ExerciseTableRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0C6ABB92243B216001FB51D /* ExerciseTableRow.swift */; };
 		F0C6ABBC2243B22F001FB51D /* ExerciseCheckInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0C6ABBB2243B22F001FB51D /* ExerciseCheckInViewController.swift */; };
 		F0C6ABBE2243B253001FB51D /* ExerciseListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0C6ABBD2243B253001FB51D /* ExerciseListViewController.swift */; };
@@ -59,6 +60,7 @@
 		F06A3CBD22439A7F00322745 /* BloodSugarCheckInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BloodSugarCheckInViewController.swift; sourceTree = "<group>"; };
 		F06A3CBF22439AF300322745 /* BloodSugarListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BloodSugarListViewController.swift; sourceTree = "<group>"; };
 		F06A3CC12243A29200322745 /* BloodSugarTableRow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BloodSugarTableRow.swift; sourceTree = "<group>"; };
+		F09F12F52243E3F900BFE022 /* PersonalModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonalModel.swift; sourceTree = "<group>"; };
 		F0C6ABB92243B216001FB51D /* ExerciseTableRow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExerciseTableRow.swift; sourceTree = "<group>"; };
 		F0C6ABBB2243B22F001FB51D /* ExerciseCheckInViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExerciseCheckInViewController.swift; sourceTree = "<group>"; };
 		F0C6ABBD2243B253001FB51D /* ExerciseListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExerciseListViewController.swift; sourceTree = "<group>"; };
@@ -97,25 +99,26 @@
 		EDA8F9C0223BA9580001682E /* Diabetes Monitoring & Assist */ = {
 			isa = PBXGroup;
 			children = (
-				F0C6ABB82243B1B4001FB51D /* Exercise */,
-				F0C6ABB72243A5FE001FB51D /* Food */,
-				F0C6ABB62243A5F5001FB51D /* BloodGlucose */,
-				EDA8F9FC223DB5E20001682E /* CheckIn.storyboard */,
 				EDA8F9D8223BABCD0001682E /* Diabetes Monitoring & Assist.entitlements */,
 				EDA8F9C1223BA9580001682E /* AppDelegate.swift */,
 				ED441583223FC74F00BB5D44 /* HealthKitConnector.swift */,
 				EDA8FA08223DB6800001682E /* DashboardViewController.swift */,
 				F0C6ABC12243D132001FB51D /* DateExtension.swift */,
+				F09F12F52243E3F900BFE022 /* PersonalModel.swift */,
 				EDA8FA0C223DB6D20001682E /* ProfileViewController.swift */,
 				EDA8FA10223DB6F00001682E /* RecommendationsViewController.swift */,
 				EDA8F9C7223BA9580001682E /* Main.storyboard */,
+				EDA8F9FC223DB5E20001682E /* CheckIn.storyboard */,
+				F0C6ABB62243A5F5001FB51D /* BloodGlucose */,
+				F0C6ABB72243A5FE001FB51D /* Food */,
+				F0C6ABB82243B1B4001FB51D /* Exercise */,
 				EDA8F9F9223DB5C00001682E /* Dashboard.storyboard */,
-				EDA8F9CA223BA95A0001682E /* Assets.xcassets */,
-				EDA8F9CC223BA95A0001682E /* LaunchScreen.storyboard */,
-				EDA8F9CF223BA95A0001682E /* Info.plist */,
 				EDA8F9FF223DB6090001682E /* Recommendations.storyboard */,
 				EDA8FA02223DB6150001682E /* Profile.storyboard */,
 				EDA8FA05223DB61F0001682E /* About.storyboard */,
+				EDA8F9CA223BA95A0001682E /* Assets.xcassets */,
+				EDA8F9CC223BA95A0001682E /* LaunchScreen.storyboard */,
+				EDA8F9CF223BA95A0001682E /* Info.plist */,
 			);
 			path = "Diabetes Monitoring & Assist";
 			sourceTree = "<group>";
@@ -253,6 +256,7 @@
 				EDA8FA11223DB6F00001682E /* RecommendationsViewController.swift in Sources */,
 				ED44157E223FB74300BB5D44 /* FoodApi.swift in Sources */,
 				ED441584223FC74F00BB5D44 /* HealthKitConnector.swift in Sources */,
+				F09F12F62243E3F900BFE022 /* PersonalModel.swift in Sources */,
 				F06A3CC022439AF300322745 /* BloodSugarListViewController.swift in Sources */,
 				F06A3CC22243A29200322745 /* BloodSugarTableRow.swift in Sources */,
 				ED441580223FB75000BB5D44 /* FoodCheckInViewController.swift in Sources */,
