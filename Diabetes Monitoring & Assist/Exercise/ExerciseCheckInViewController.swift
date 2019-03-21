@@ -9,13 +9,13 @@
 import UIKit
 import HealthKit
 
-class ExerciseCheckInViewController: UIViewController, UITextFieldDelegate {
+class ExerciseCheckInViewController: UIViewController {
 
     @IBOutlet weak var distance: UITextField!
     @IBOutlet weak var datePicker: UIDatePicker!
 
     @IBAction func saveData(_ sender: Any) {
-        HealthKitConnector.save(dataType: .distanceWalkingRunning, unit: HKUnit.mile(), value: Double(distance.text!)!, date: datePicker.date) { (success, error) in
+        HealthKitConnector.save(dataType: .distanceWalkingRunning, unit: .mile(), value: Double(distance.text!)!, date: datePicker.date) { (success, error) in
             if success {
                 DispatchQueue.main.async {
                     self.navigationController?.popViewController(animated: true)
@@ -25,11 +25,6 @@ class ExerciseCheckInViewController: UIViewController, UITextFieldDelegate {
                 print(error!)
             }
         }
-    }
-
-    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
-        textField.resignFirstResponder()
-        return true
     }
 
 }

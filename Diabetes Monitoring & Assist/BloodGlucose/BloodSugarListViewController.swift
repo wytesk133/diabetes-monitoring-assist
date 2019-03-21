@@ -20,8 +20,8 @@ class BloodSugarListViewController: UIViewController, UITableViewDataSource {
     }
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        guard let cell = tableView.dequeueReusableCell(withIdentifier: "BloodSugarCell", for: indexPath) as? BloodSugarTableRow else {
-            fatalError("The dequeued cell is not an instance of BloodSugarCell.")
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: "BloodGlucoseCell", for: indexPath) as? BloodSugarTableRow else {
+            fatalError("The dequeued cell is not an instance of BloodGlucoseCell.")
         }
         
         let sample = entries[indexPath.row]
@@ -29,8 +29,8 @@ class BloodSugarListViewController: UIViewController, UITableViewDataSource {
         let value = String(sample.quantity.doubleValue(for: HKUnit(from: unit)))
         cell.bloodGlucose.text = "\(value) \(unit)"
         let dateFormatter = DateFormatter()
-        dateFormatter.dateStyle = DateFormatter.Style.medium
-        dateFormatter.timeStyle = DateFormatter.Style.medium
+        dateFormatter.dateStyle = .medium
+        dateFormatter.timeStyle = .medium
         cell.date.text = dateFormatter.string(from: sample.startDate)
         cell.selectionStyle = .none
         return cell

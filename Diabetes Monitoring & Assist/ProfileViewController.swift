@@ -1,5 +1,5 @@
 //
-//  DashboardViewController.swift
+//  ProfileViewController.swift
 //  Diabetes Monitoring & Assist
 //
 //  Created by Kay Lab on 3/16/19.

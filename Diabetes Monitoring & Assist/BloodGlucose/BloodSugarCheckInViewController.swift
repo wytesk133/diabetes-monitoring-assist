@@ -9,7 +9,7 @@
 import UIKit
 import HealthKit
 
-class BloodSugarCheckInViewController: UIViewController, UITextFieldDelegate {
+class BloodSugarCheckInViewController: UIViewController {
 
     @IBOutlet weak var bloodGlucose: UITextField!
     @IBOutlet weak var datePicker: UIDatePicker!
@@ -25,11 +25,6 @@ class BloodSugarCheckInViewController: UIViewController, UITextFieldDelegate {
                 print(error!)
             }
         }
-    }
-
-    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
-        textField.resignFirstResponder()
-        return true
     }
 
 }

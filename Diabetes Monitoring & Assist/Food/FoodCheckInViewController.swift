@@ -47,7 +47,7 @@ class FoodCheckInViewController: UIViewController, UITextFieldDelegate, UITableV
         let item = foods[indexPath.row]
         cell.foodName.text = item.foodName
         cell.foodDescription.text = "\(item.brandName), \(item.quantity) \(item.quantityUnit)"
-        cell.calories.text = String(format: "%.1f",item.calories)
+        cell.calories.text = String(format: "%.1f", item.calories)
         cell.thumbnail.image = item.thumbnail
         return cell
     }
@@ -59,7 +59,7 @@ class FoodCheckInViewController: UIViewController, UITextFieldDelegate, UITableV
                 return
             }
             if let calories = data?["energyKcal"] {
-                HealthKitConnector.save(dataType: .dietaryEnergyConsumed, unit: HKUnit.kilocalorie(), value: calories!, date: Date()) { (success, error) in
+                HealthKitConnector.save(dataType: .dietaryEnergyConsumed, unit: .kilocalorie(), value: calories!, date: Date()) { (success, error) in
                     if success {
                         print("Recorded \(calories!) kcal")
                     }
@@ -69,7 +69,7 @@ class FoodCheckInViewController: UIViewController, UITextFieldDelegate, UITableV
                 }
             }
             if let carbohydrates = data?["carbohydratesGram"] {
-                HealthKitConnector.save(dataType: .dietaryCarbohydrates, unit: HKUnit.gram(), value: carbohydrates!, date: Date()) { (success, error) in
+                HealthKitConnector.save(dataType: .dietaryCarbohydrates, unit: .gram(), value: carbohydrates!, date: Date()) { (success, error) in
                     if success {
                         print("Recorded \(carbohydrates!) grams")
                     }

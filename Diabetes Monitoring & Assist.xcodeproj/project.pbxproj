@@ -31,6 +31,7 @@
 		F0C6ABBA2243B216001FB51D /* ExerciseTableRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0C6ABB92243B216001FB51D /* ExerciseTableRow.swift */; };
 		F0C6ABBC2243B22F001FB51D /* ExerciseCheckInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0C6ABBB2243B22F001FB51D /* ExerciseCheckInViewController.swift */; };
 		F0C6ABBE2243B253001FB51D /* ExerciseListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0C6ABBD2243B253001FB51D /* ExerciseListViewController.swift */; };
+		F0C6ABC22243D132001FB51D /* DateExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0C6ABC12243D132001FB51D /* DateExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -61,6 +62,7 @@
 		F0C6ABB92243B216001FB51D /* ExerciseTableRow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExerciseTableRow.swift; sourceTree = "<group>"; };
 		F0C6ABBB2243B22F001FB51D /* ExerciseCheckInViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExerciseCheckInViewController.swift; sourceTree = "<group>"; };
 		F0C6ABBD2243B253001FB51D /* ExerciseListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExerciseListViewController.swift; sourceTree = "<group>"; };
+		F0C6ABC12243D132001FB51D /* DateExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateExtension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +105,7 @@
 				EDA8F9C1223BA9580001682E /* AppDelegate.swift */,
 				ED441583223FC74F00BB5D44 /* HealthKitConnector.swift */,
 				EDA8FA08223DB6800001682E /* DashboardViewController.swift */,
+				F0C6ABC12243D132001FB51D /* DateExtension.swift */,
 				EDA8FA0C223DB6D20001682E /* ProfileViewController.swift */,
 				EDA8FA10223DB6F00001682E /* RecommendationsViewController.swift */,
 				EDA8F9C7223BA9580001682E /* Main.storyboard */,
@@ -239,6 +242,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F0C6ABBE2243B253001FB51D /* ExerciseListViewController.swift in Sources */,
+				F0C6ABC22243D132001FB51D /* DateExtension.swift in Sources */,
 				EDA8F9C2223BA9580001682E /* AppDelegate.swift in Sources */,
 				F0C6ABBA2243B216001FB51D /* ExerciseTableRow.swift in Sources */,
 				F0C6ABBC2243B22F001FB51D /* ExerciseCheckInViewController.swift in Sources */,

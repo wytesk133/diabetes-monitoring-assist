@@ -53,7 +53,7 @@ class HealthKitConnector {
                 return
         }
         //3. Prepare a list of types you want HealthKit to read and write
-        let healthKitTypesToWrite: Set<HKSampleType> = [bloodSugar, calories, carbohydrates, stepCount, exerciseDistance]
+        let healthKitTypesToWrite: Set<HKSampleType> = [bloodSugar, calories, carbohydrates, exerciseDistance]
         let healthKitTypesToRead: Set<HKObjectType> = [bloodSugar, calories, carbohydrates, stepCount, exerciseDistance]
         //4. Request Authorization
         HKHealthStore().requestAuthorization(toShare: healthKitTypesToWrite,
@@ -62,18 +62,18 @@ class HealthKitConnector {
         }
     }
 
-    class func query(_ dataType: HKQuantityTypeIdentifier, completionHandler: @escaping ([HKQuantitySample]?, Error?) -> Void) {
+    class func query(_ dataType: HKQuantityTypeIdentifier, before startDate: Date = .distantPast, completionHandler: @escaping ([HKQuantitySample]?, Error?) -> Void) {
         //1. Use HKQuery to load the most recent samples.
         guard let sampleType = HKObjectType.quantityType(forIdentifier: dataType) else {
             completionHandler(nil, HealthkitSetupError.dataTypeNotAvailable)
             return
         }
-        let mostRecentPredicate = HKQuery.predicateForSamples(withStart: Date.distantPast,
+        let mostRecentPredicate = HKQuery.predicateForSamples(withStart: startDate,
                                                               end: Date(),
                                                               options: .strictEndDate)
         let sortDescriptor = NSSortDescriptor(key: HKSampleSortIdentifierStartDate,
                                               ascending: false)
-        let limit = 1000
+        let limit = 1000000
         let sampleQuery = HKSampleQuery(sampleType: sampleType,
                                         predicate: mostRecentPredicate,
                                         limit: limit,

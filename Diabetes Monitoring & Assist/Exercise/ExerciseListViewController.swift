@@ -25,11 +25,11 @@ class ExerciseListViewController: UIViewController, UITableViewDataSource {
         }
         
         let sample = entries[indexPath.row]
-        let value = String(sample.quantity.doubleValue(for: HKUnit.mile()))
+        let value = String(sample.quantity.doubleValue(for: .mile()))
         cell.distance.text = "\(value) mi"
         let dateFormatter = DateFormatter()
-        dateFormatter.dateStyle = DateFormatter.Style.medium
-        dateFormatter.timeStyle = DateFormatter.Style.medium
+        dateFormatter.dateStyle = .medium
+        dateFormatter.timeStyle = .medium
         cell.date.text = dateFormatter.string(from: sample.startDate)
         cell.selectionStyle = .none
         return cell
