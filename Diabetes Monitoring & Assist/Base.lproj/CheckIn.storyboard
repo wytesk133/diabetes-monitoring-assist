@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -239,20 +240,169 @@
         <!--Blood Sugar Level-->
         <scene sceneID="iMg-er-fAS">
             <objects>
-                <viewController id="xvk-kl-mqr" sceneMemberID="viewController">
+                <viewController id="xvk-kl-mqr" customClass="BloodSugarListViewController" customModule="Diabetes_Monitoring___Assist" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="mge-GW-UH1">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="72" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Teg-fO-afM">
+                                <rect key="frame" x="0.0" y="64" width="375" height="554"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="BloodSugarCell" id="yn2-RV-Ybd" customClass="BloodSugarTableRow" customModule="Diabetes_Monitoring___Assist" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="72"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="yn2-RV-Ybd" id="Ajd-Fp-RyP">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="71.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Glucose Level" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lwp-Zm-4gT">
+                                                    <rect key="frame" x="15" y="11" width="345" height="21"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="21" id="Ax0-CB-hGz"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Date" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bPs-mb-KhD">
+                                                    <rect key="frame" x="15" y="40" width="345" height="21"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="21" id="jJD-uL-SXx"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="Lwp-Zm-4gT" firstAttribute="top" secondItem="Ajd-Fp-RyP" secondAttribute="topMargin" id="CoF-YT-En5"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="bPs-mb-KhD" secondAttribute="trailing" id="KXd-c4-wpa"/>
+                                                <constraint firstItem="bPs-mb-KhD" firstAttribute="leading" secondItem="Ajd-Fp-RyP" secondAttribute="leadingMargin" id="N2k-15-JrX"/>
+                                                <constraint firstItem="bPs-mb-KhD" firstAttribute="top" secondItem="Lwp-Zm-4gT" secondAttribute="bottom" constant="8" id="YCx-Zq-w30"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="Lwp-Zm-4gT" secondAttribute="trailing" id="kX0-Qq-GAA"/>
+                                                <constraint firstItem="Lwp-Zm-4gT" firstAttribute="leading" secondItem="Ajd-Fp-RyP" secondAttribute="leadingMargin" id="wUE-C7-gOv"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="bloodGlucose" destination="Lwp-Zm-4gT" id="Jjz-ff-tic"/>
+                                            <outlet property="date" destination="bPs-mb-KhD" id="0XE-Lc-9K2"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="xvk-kl-mqr" id="LVd-xv-Brm"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Teg-fO-afM" firstAttribute="top" secondItem="gTk-c1-fT9" secondAttribute="top" id="8jO-PO-CCa"/>
+                            <constraint firstItem="Teg-fO-afM" firstAttribute="leading" secondItem="gTk-c1-fT9" secondAttribute="leading" id="TnL-oU-8sm"/>
+                            <constraint firstItem="Teg-fO-afM" firstAttribute="bottom" secondItem="gTk-c1-fT9" secondAttribute="bottom" id="eUc-FN-ArG"/>
+                            <constraint firstItem="Teg-fO-afM" firstAttribute="trailing" secondItem="gTk-c1-fT9" secondAttribute="trailing" id="mg3-ld-Mnr"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="gTk-c1-fT9"/>
                     </view>
                     <navigationItem key="navigationItem" title="Blood Sugar Level" id="rKg-R8-43K">
-                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="Ppm-h7-Rfc"/>
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="Ppm-h7-Rfc">
+                            <connections>
+                                <segue destination="riV-SF-XvM" kind="show" id="WbK-Cf-dGA"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="bloodSugarTableView" destination="Teg-fO-afM" id="xyq-fF-RID"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XJm-qv-hpz" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1358" y="-341"/>
+            <point key="canvasLocation" x="1357.5999999999999" y="-341.37931034482762"/>
+        </scene>
+        <!--Enter Data-->
+        <scene sceneID="5cu-wg-vWP">
+            <objects>
+                <viewController id="riV-SF-XvM" customClass="BloodSugarCheckInViewController" customModule="Diabetes_Monitoring___Assist" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="AwU-Bb-8hT">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="7hQ-D3-ZdZ">
+                                <rect key="frame" x="16" y="117" width="343" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="lessThanOrEqual" constant="30" id="cDw-dr-CXd"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="30" id="ms6-gu-LEx"/>
+                                    <constraint firstAttribute="height" constant="30" id="znD-d2-kzy"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
+                                <connections>
+                                    <outlet property="delegate" destination="riV-SF-XvM" id="kqI-H1-Xyh"/>
+                                </connections>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Blood Glucose (mg/dL)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ExP-H0-KpO">
+                                <rect key="frame" x="16" y="80" width="343" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="21" id="5hu-Wv-k7Y"/>
+                                    <constraint firstAttribute="height" constant="21" id="Nec-9h-Nbf"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Date Recorded" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eIv-ZY-Do6">
+                                <rect key="frame" x="16" y="163" width="343" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="ECX-ik-H2p"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="k4G-Bl-RbG">
+                                <rect key="frame" x="0.0" y="200" width="375" height="162"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="162" id="P7K-vW-XEn"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="162" id="a2S-Ed-DLH"/>
+                                </constraints>
+                                <date key="date" timeIntervalSinceReferenceDate="574856795.85502803">
+                                    <!--2019-03-21 10:26:35 +0000-->
+                                </date>
+                            </datePicker>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="k4G-Bl-RbG" firstAttribute="top" secondItem="eIv-ZY-Do6" secondAttribute="bottom" constant="16" id="0FV-l2-6jE"/>
+                            <constraint firstItem="LM3-PN-kz0" firstAttribute="trailing" secondItem="ExP-H0-KpO" secondAttribute="trailing" constant="16" id="1N1-Ce-Avu"/>
+                            <constraint firstItem="7hQ-D3-ZdZ" firstAttribute="top" secondItem="ExP-H0-KpO" secondAttribute="bottom" constant="16" id="CVG-Am-1FK"/>
+                            <constraint firstItem="LM3-PN-kz0" firstAttribute="trailing" secondItem="eIv-ZY-Do6" secondAttribute="trailing" constant="16" id="FkP-h3-0TH"/>
+                            <constraint firstItem="k4G-Bl-RbG" firstAttribute="trailing" secondItem="LM3-PN-kz0" secondAttribute="trailing" id="Frd-GD-luV"/>
+                            <constraint firstItem="ExP-H0-KpO" firstAttribute="top" secondItem="LM3-PN-kz0" secondAttribute="top" constant="16" id="HIa-sz-JOO"/>
+                            <constraint firstItem="eIv-ZY-Do6" firstAttribute="leading" secondItem="LM3-PN-kz0" secondAttribute="leading" constant="16" id="J3Z-vo-gxC"/>
+                            <constraint firstItem="k4G-Bl-RbG" firstAttribute="leading" secondItem="LM3-PN-kz0" secondAttribute="leading" id="mrS-on-Hub"/>
+                            <constraint firstItem="7hQ-D3-ZdZ" firstAttribute="leading" secondItem="LM3-PN-kz0" secondAttribute="leading" constant="16" id="nwA-9d-C9e"/>
+                            <constraint firstItem="eIv-ZY-Do6" firstAttribute="top" secondItem="7hQ-D3-ZdZ" secondAttribute="bottom" constant="16" id="pjP-8u-t8k"/>
+                            <constraint firstItem="ExP-H0-KpO" firstAttribute="leading" secondItem="LM3-PN-kz0" secondAttribute="leading" constant="16" id="whi-4I-PpJ"/>
+                            <constraint firstItem="LM3-PN-kz0" firstAttribute="trailing" secondItem="7hQ-D3-ZdZ" secondAttribute="trailing" constant="16" id="xgC-sh-NRx"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="LM3-PN-kz0"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Enter Data" id="KHM-cW-Lsy">
+                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="GMa-7Q-eWw">
+                            <connections>
+                                <action selector="saveData:" destination="riV-SF-XvM" id="bxD-xg-Wfk"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="bloodGlucose" destination="7hQ-D3-ZdZ" id="Rnc-iq-CQo"/>
+                        <outlet property="datePicker" destination="k4G-Bl-RbG" id="Kpc-kc-Iqn"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xSX-r0-d3U" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2180" y="-652"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="3t0-QF-eqB">

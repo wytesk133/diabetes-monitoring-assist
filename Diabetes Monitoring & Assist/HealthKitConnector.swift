@@ -31,16 +31,16 @@
 import HealthKit
 
 class HealthKitConnector {
-    
+
     private enum HealthkitSetupError: Error {
         case notAvailableOnDevice
         case dataTypeNotAvailable
     }
-    
-    class func authorizeHealthKit(completion: @escaping (Bool, Error?) -> Swift.Void) {
+
+    class func authorizeHealthKit(completionHandler: @escaping (Bool, Error?) -> Void) {
         //1. Check to see if HealthKit Is Available on this device
         guard HKHealthStore.isHealthDataAvailable() else {
-            completion(false, HealthkitSetupError.notAvailableOnDevice)
+            completionHandler(false, HealthkitSetupError.notAvailableOnDevice)
             return
         }
         //2. Prepare the data types that will interact with HealthKit
@@ -49,7 +49,7 @@ class HealthKitConnector {
             let carbohydrates = HKObjectType.quantityType(forIdentifier: .dietaryCarbohydrates),
             let stepCount = HKObjectType.quantityType(forIdentifier: .stepCount),
             let exerciseDistance = HKObjectType.quantityType(forIdentifier: .distanceWalkingRunning) else {
-                completion(false, HealthkitSetupError.dataTypeNotAvailable)
+                completionHandler(false, HealthkitSetupError.dataTypeNotAvailable)
                 return
         }
         //3. Prepare a list of types you want HealthKit to read and write
@@ -58,7 +58,59 @@ class HealthKitConnector {
         //4. Request Authorization
         HKHealthStore().requestAuthorization(toShare: healthKitTypesToWrite,
                                              read: healthKitTypesToRead) { (success, error) in
-                                                completion(success, error)
+                                                completionHandler(success, error)
+        }
+    }
+
+    class func query(_ dataType: HKQuantityTypeIdentifier, completionHandler: @escaping ([HKQuantitySample]?, Error?) -> Void) {
+        //1. Use HKQuery to load the most recent samples.
+        guard let sampleType = HKObjectType.quantityType(forIdentifier: dataType) else {
+            completionHandler(nil, HealthkitSetupError.dataTypeNotAvailable)
+            return
+        }
+        let mostRecentPredicate = HKQuery.predicateForSamples(withStart: Date.distantPast,
+                                                              end: Date(),
+                                                              options: .strictEndDate)
+        let sortDescriptor = NSSortDescriptor(key: HKSampleSortIdentifierStartDate,
+                                              ascending: false)
+        let limit = 1000
+        let sampleQuery = HKSampleQuery(sampleType: sampleType,
+                                        predicate: mostRecentPredicate,
+                                        limit: limit,
+                                        sortDescriptors: [sortDescriptor]) { (query, samples, error) in
+                                            //2. Always dispatch to the main thread when complete.
+                                            DispatchQueue.main.async {
+                                                guard let samples = samples else {
+                                                    completionHandler(nil, error)
+                                                    return
+                                                }
+                                                completionHandler(samples as? [HKQuantitySample], nil)
+                                            }
+        }
+        HKHealthStore().execute(sampleQuery)
+    }
+
+    class func save(dataType: HKQuantityTypeIdentifier, unit: HKUnit, value: Double, date: Date, completionHandler: @escaping (Bool, Error?) -> Void) {
+        //1.  Make sure the type exists
+        guard let dataTypeObj = HKQuantityType.quantityType(forIdentifier: dataType) else {
+            completionHandler(false, HealthkitSetupError.dataTypeNotAvailable)
+            return
+        }
+        //2.  Use the HKUnit to create a quantity object
+        let quantity = HKQuantity(unit: unit, doubleValue: value)
+        let sample = HKQuantitySample(type: dataTypeObj,
+                                      quantity: quantity,
+                                      start: date,
+                                      end: date)
+        //3.  Save the sample to HealthKit
+        HKHealthStore().save(sample) { (success, error) in
+            if let error = error {
+                print("Error Saving Sample: \(error.localizedDescription)")
+                completionHandler(false, error)
+            } else {
+                print("Successfully saved Sample")
+                completionHandler(true, nil)
+            }
         }
     }
 }

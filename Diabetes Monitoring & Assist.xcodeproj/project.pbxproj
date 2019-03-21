@@ -25,6 +25,9 @@
 		EDA8FA09223DB6810001682E /* DashboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDA8FA08223DB6800001682E /* DashboardViewController.swift */; };
 		EDA8FA0D223DB6D20001682E /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDA8FA0C223DB6D20001682E /* ProfileViewController.swift */; };
 		EDA8FA11223DB6F00001682E /* RecommendationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDA8FA10223DB6F00001682E /* RecommendationsViewController.swift */; };
+		F06A3CBE22439A7F00322745 /* BloodSugarCheckInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F06A3CBD22439A7F00322745 /* BloodSugarCheckInViewController.swift */; };
+		F06A3CC022439AF300322745 /* BloodSugarListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F06A3CBF22439AF300322745 /* BloodSugarListViewController.swift */; };
+		F06A3CC22243A29200322745 /* BloodSugarTableRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = F06A3CC12243A29200322745 /* BloodSugarTableRow.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -49,6 +52,9 @@
 		EDA8FA08223DB6800001682E /* DashboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardViewController.swift; sourceTree = "<group>"; };
 		EDA8FA0C223DB6D20001682E /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		EDA8FA10223DB6F00001682E /* RecommendationsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecommendationsViewController.swift; sourceTree = "<group>"; };
+		F06A3CBD22439A7F00322745 /* BloodSugarCheckInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BloodSugarCheckInViewController.swift; sourceTree = "<group>"; };
+		F06A3CBF22439AF300322745 /* BloodSugarListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BloodSugarListViewController.swift; sourceTree = "<group>"; };
+		F06A3CC12243A29200322745 /* BloodSugarTableRow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BloodSugarTableRow.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +89,8 @@
 		EDA8F9C0223BA9580001682E /* Diabetes Monitoring & Assist */ = {
 			isa = PBXGroup;
 			children = (
+				F0C6ABB72243A5FE001FB51D /* Food */,
+				F0C6ABB62243A5F5001FB51D /* BloodSugar */,
 				EDA8F9FC223DB5E20001682E /* CheckIn.storyboard */,
 				EDA8F9D8223BABCD0001682E /* Diabetes Monitoring & Assist.entitlements */,
 				EDA8F9C1223BA9580001682E /* AppDelegate.swift */,
@@ -98,10 +106,6 @@
 				EDA8F9FF223DB6090001682E /* Recommendations.storyboard */,
 				EDA8FA02223DB6150001682E /* Profile.storyboard */,
 				EDA8FA05223DB61F0001682E /* About.storyboard */,
-				ED441579223FB70A00BB5D44 /* Food.swift */,
-				ED44157B223FB72A00BB5D44 /* FoodTableRow.swift */,
-				ED44157D223FB74300BB5D44 /* FoodApi.swift */,
-				ED44157F223FB75000BB5D44 /* FoodCheckInViewController.swift */,
 			);
 			path = "Diabetes Monitoring & Assist";
 			sourceTree = "<group>";
@@ -112,6 +116,27 @@
 				EDA8F9D6223BABCD0001682E /* HealthKit.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F0C6ABB62243A5F5001FB51D /* BloodSugar */ = {
+			isa = PBXGroup;
+			children = (
+				F06A3CC12243A29200322745 /* BloodSugarTableRow.swift */,
+				F06A3CBD22439A7F00322745 /* BloodSugarCheckInViewController.swift */,
+				F06A3CBF22439AF300322745 /* BloodSugarListViewController.swift */,
+			);
+			path = BloodSugar;
+			sourceTree = "<group>";
+		};
+		F0C6ABB72243A5FE001FB51D /* Food */ = {
+			isa = PBXGroup;
+			children = (
+				ED441579223FB70A00BB5D44 /* Food.swift */,
+				ED44157B223FB72A00BB5D44 /* FoodTableRow.swift */,
+				ED44157D223FB74300BB5D44 /* FoodApi.swift */,
+				ED44157F223FB75000BB5D44 /* FoodCheckInViewController.swift */,
+			);
+			path = Food;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -198,11 +223,14 @@
 			files = (
 				EDA8F9C2223BA9580001682E /* AppDelegate.swift in Sources */,
 				ED44157C223FB72A00BB5D44 /* FoodTableRow.swift in Sources */,
+				F06A3CBE22439A7F00322745 /* BloodSugarCheckInViewController.swift in Sources */,
 				EDA8FA0D223DB6D20001682E /* ProfileViewController.swift in Sources */,
 				ED44157A223FB70A00BB5D44 /* Food.swift in Sources */,
 				EDA8FA11223DB6F00001682E /* RecommendationsViewController.swift in Sources */,
 				ED44157E223FB74300BB5D44 /* FoodApi.swift in Sources */,
 				ED441584223FC74F00BB5D44 /* HealthKitConnector.swift in Sources */,
+				F06A3CC022439AF300322745 /* BloodSugarListViewController.swift in Sources */,
+				F06A3CC22243A29200322745 /* BloodSugarTableRow.swift in Sources */,
 				ED441580223FB75000BB5D44 /* FoodCheckInViewController.swift in Sources */,
 				EDA8FA09223DB6810001682E /* DashboardViewController.swift in Sources */,
 			);
