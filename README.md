@@ -11,8 +11,8 @@ Our group has developed a mobile application that will help diabetic individuals
 * [Wyte Krongapiradee](mailto:wkrongap@uci.edu)
 
 ## Attributions
+* [Estimated Calorie Needs Table from Health.gov](https://health.gov/dietaryguidelines/2015/guidelines/appendix-2/)
+* [Nutritional Goals Table from Health.gov](https://health.gov/dietaryguidelines/2015/guidelines/appendix-7/)
 * [Glyphs from Icons8](https://icons8.com/ios)
-* [Maps SDK from MapQuest](https://developer.mapquest.com/documentation/maps-sdk/ios/v4.0/)
-* [BMI Table from The National Heart, Lung, and Blood Institute (NHLBI)](https://www.nhlbi.nih.gov/health/educational/lose_wt/BMI/bmi_tbl.htm)
-* [Food Search powered by Nutritionix](https://www.nutritionix.com/business/api)
+* [Food Search and Nutrition APIs powered by Nutritionix](https://www.nutritionix.com/business/api)
 * [Tutorials on raywenderlich.com](https://www.raywenderlich.com/)
