@@ -2,6 +2,10 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>NSHealthUpdateUsageDescription</key>
+	<string>Diabetes Monitoring &amp; Assists needs your permission to store recorded activities into your health data.</string>
+	<key>NSHealthShareUsageDescription</key>
+	<string>Diabetes Monitoring &amp; Assists needs your permission to analyze your health data and give personalized recommendations.</string>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>$(DEVELOPMENT_LANGUAGE)</string>
 	<key>CFBundleDisplayName</key>

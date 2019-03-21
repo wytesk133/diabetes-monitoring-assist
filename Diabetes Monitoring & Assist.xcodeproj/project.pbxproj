@@ -11,6 +11,7 @@
 		ED44157C223FB72A00BB5D44 /* FoodTableRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED44157B223FB72A00BB5D44 /* FoodTableRow.swift */; };
 		ED44157E223FB74300BB5D44 /* FoodApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED44157D223FB74300BB5D44 /* FoodApi.swift */; };
 		ED441580223FB75000BB5D44 /* FoodCheckInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED44157F223FB75000BB5D44 /* FoodCheckInViewController.swift */; };
+		ED441584223FC74F00BB5D44 /* HealthKitConnector.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED441583223FC74F00BB5D44 /* HealthKitConnector.swift */; };
 		EDA8F9C2223BA9580001682E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDA8F9C1223BA9580001682E /* AppDelegate.swift */; };
 		EDA8F9C9223BA9580001682E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EDA8F9C7223BA9580001682E /* Main.storyboard */; };
 		EDA8F9CB223BA95A0001682E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EDA8F9CA223BA95A0001682E /* Assets.xcassets */; };
@@ -31,6 +32,7 @@
 		ED44157B223FB72A00BB5D44 /* FoodTableRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodTableRow.swift; sourceTree = "<group>"; };
 		ED44157D223FB74300BB5D44 /* FoodApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodApi.swift; sourceTree = "<group>"; };
 		ED44157F223FB75000BB5D44 /* FoodCheckInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodCheckInViewController.swift; sourceTree = "<group>"; };
+		ED441583223FC74F00BB5D44 /* HealthKitConnector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthKitConnector.swift; sourceTree = "<group>"; };
 		EDA8F9BE223BA9580001682E /* Diabetes Monitoring & Assist.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Diabetes Monitoring & Assist.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EDA8F9C1223BA9580001682E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EDA8F9C8223BA9580001682E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -84,6 +86,7 @@
 				EDA8F9FC223DB5E20001682E /* CheckIn.storyboard */,
 				EDA8F9D8223BABCD0001682E /* Diabetes Monitoring & Assist.entitlements */,
 				EDA8F9C1223BA9580001682E /* AppDelegate.swift */,
+				ED441583223FC74F00BB5D44 /* HealthKitConnector.swift */,
 				EDA8FA08223DB6800001682E /* DashboardViewController.swift */,
 				EDA8FA0C223DB6D20001682E /* ProfileViewController.swift */,
 				EDA8FA10223DB6F00001682E /* RecommendationsViewController.swift */,
@@ -199,6 +202,7 @@
 				ED44157A223FB70A00BB5D44 /* Food.swift in Sources */,
 				EDA8FA11223DB6F00001682E /* RecommendationsViewController.swift in Sources */,
 				ED44157E223FB74300BB5D44 /* FoodApi.swift in Sources */,
+				ED441584223FC74F00BB5D44 /* HealthKitConnector.swift in Sources */,
 				ED441580223FB75000BB5D44 /* FoodCheckInViewController.swift in Sources */,
 				EDA8FA09223DB6810001682E /* DashboardViewController.swift in Sources */,
 			);
