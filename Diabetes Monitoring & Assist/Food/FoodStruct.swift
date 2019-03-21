@@ -9,6 +9,7 @@
 import UIKit
 
 struct Food {
+    let id: String
     let foodName: String
     let brandName: String
     let quantity: Double
@@ -17,7 +18,8 @@ struct Food {
     let thumbnail: UIImage?
     
     init?(fromJson json: [String: Any]) {
-        guard let foodName = json["food_name"] as? String,
+        guard let id = json["nix_item_id"] as? String,
+            let foodName = json["food_name"] as? String,
             let brandName = json["brand_name"] as? String,
             let quantity = json["serving_qty"] as? Double,
             let quantityUnit = json["serving_unit"] as? String,
@@ -25,6 +27,7 @@ struct Food {
             else {
                 return nil
         }
+        self.id = id
         self.foodName = foodName
         self.brandName = brandName
         self.quantity = quantity

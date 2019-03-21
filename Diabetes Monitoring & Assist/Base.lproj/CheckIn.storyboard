@@ -270,7 +270,6 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" returnKeyType="search"/>
                                 <connections>
-                                    <action selector="changeListener:" destination="qie-HR-YRm" eventType="editingChanged" id="26R-96-EQH"/>
                                     <outlet property="delegate" destination="qie-HR-YRm" id="6ES-uf-rf9"/>
                                 </connections>
                             </textField>
@@ -375,7 +374,6 @@
                     <navigationItem key="navigationItem" title="Food" id="GrC-ML-vff"/>
                     <connections>
                         <outlet property="foodTableView" destination="6js-4j-ITI" id="hlX-Xn-4ie"/>
-                        <outlet property="searchBox" destination="GYh-cl-6TW" id="4Fp-On-t5H"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ovr-pu-0Dr" userLabel="First Responder" sceneMemberID="firstResponder"/>

@@ -7,19 +7,16 @@
 //
 
 import UIKit
+import HealthKit
 
 class FoodCheckInViewController: UIViewController, UITextFieldDelegate, UITableViewDataSource, UITableViewDelegate {
 
-    @IBOutlet weak var searchBox: UITextField!
     @IBOutlet weak var foodTableView: UITableView!
     
     var foods = [Food]()
-    
-    @IBAction func changeListener(_ sender: UITextField) {
-        let query = sender.text!
-        if query == "" {
-            return
-        }
+
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        let query = textField.text!
         FoodApi.search(query) { (data, error) in
             guard error == nil else {
                 print("Error: \(error!)")
@@ -30,16 +27,11 @@ class FoodCheckInViewController: UIViewController, UITextFieldDelegate, UITableV
                 return
             }
             DispatchQueue.main.async {
-                if sender.text! == query {
-                    self.foods = data
-                    self.foodTableView.reloadData()
-                }
+                self.foods = data
+                self.foodTableView.reloadData()
             }
         }
-    }
-
-    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
-        searchBox.resignFirstResponder()
+        textField.resignFirstResponder()
         return true
     }
     
@@ -61,9 +53,36 @@ class FoodCheckInViewController: UIViewController, UITextFieldDelegate, UITableV
     }
 
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        print("Recorded \(foods[indexPath.row].calories) calories")
-        self.foodTableView.deselectRow(at: indexPath, animated: true)
-        self.navigationController!.popViewController(animated: true)
+        FoodApi.queryCarbs(id: foods[indexPath.row].id) { (data, error) in
+            guard error == nil else {
+                print("Error: \(error!)")
+                return
+            }
+            if let calories = data?["energyKcal"] {
+                HealthKitConnector.save(dataType: .dietaryEnergyConsumed, unit: HKUnit.kilocalorie(), value: calories!, date: Date()) { (success, error) in
+                    if success {
+                        print("Recorded \(calories!) kcal")
+                    }
+                    else {
+                        print(error!)
+                    }
+                }
+            }
+            if let carbohydrates = data?["carbohydratesGram"] {
+                HealthKitConnector.save(dataType: .dietaryCarbohydrates, unit: HKUnit.gram(), value: carbohydrates!, date: Date()) { (success, error) in
+                    if success {
+                        print("Recorded \(carbohydrates!) grams")
+                    }
+                    else {
+                        print(error!)
+                    }
+                }
+            }
+            DispatchQueue.main.async {
+                self.foodTableView.deselectRow(at: indexPath, animated: true)
+                self.navigationController!.popViewController(animated: true)
+            }
+        }
     }
 
     override func viewDidLoad() {

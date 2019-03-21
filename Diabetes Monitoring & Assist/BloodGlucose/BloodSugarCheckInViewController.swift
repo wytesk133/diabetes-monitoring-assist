@@ -28,7 +28,7 @@ class BloodSugarCheckInViewController: UIViewController, UITextFieldDelegate {
     }
 
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
-        bloodGlucose.resignFirstResponder()
+        textField.resignFirstResponder()
         return true
     }
 

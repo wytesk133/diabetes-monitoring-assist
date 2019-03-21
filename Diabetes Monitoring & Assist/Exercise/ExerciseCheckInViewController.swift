@@ -28,7 +28,7 @@ class ExerciseCheckInViewController: UIViewController, UITextFieldDelegate {
     }
 
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
-        distance.resignFirstResponder()
+        textField.resignFirstResponder()
         return true
     }
 
