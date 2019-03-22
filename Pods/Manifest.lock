@@ -1,0 +1,59 @@
+PODS:
+  - Mapbox-iOS-SDK (4.1.0)
+  - MapQuestMaps (4.0.0):
+    - Mapbox-iOS-SDK (= 4.1.0)
+    - MQCore (= 1.0.0-beta.7)
+  - MQCore (1.0.0-beta.7)
+  - MQNavigation (3.4.0):
+    - Protobuf
+  - MQSearchAhead (1.0.0):
+    - MQCore
+  - Protobuf (3.7.0)
+  - Pulley (2.6.3)
+  - Reachability (3.2)
+  - SVProgressHUD (1.1.4)
+
+DEPENDENCIES:
+  - MapQuestMaps (~> 4.0.0)
+  - MQCore (~> 1.0.0-beta.7)
+  - MQNavigation (~> 3.4.0)
+  - MQSearchAhead (~> 1.0.0)
+  - Pulley
+  - Reachability (~> 3.2)
+  - SVProgressHUD (from `https://github.com/sridvijay/SVProgressHUD.git`)
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - Mapbox-iOS-SDK
+    - Protobuf
+    - Pulley
+    - Reachability
+  https://github.com/MapQuest/podspecs-ios.git:
+    - MapQuestMaps
+    - MQCore
+    - MQNavigation
+    - MQSearchAhead
+
+EXTERNAL SOURCES:
+  SVProgressHUD:
+    :git: https://github.com/sridvijay/SVProgressHUD.git
+
+CHECKOUT OPTIONS:
+  SVProgressHUD:
+    :commit: a5999509e41e5abd82748bb0e2c8636c5c46c2c0
+    :git: https://github.com/sridvijay/SVProgressHUD.git
+
+SPEC CHECKSUMS:
+  Mapbox-iOS-SDK: f0a9813d5f08c096c1199eceb57ec6102b19cf54
+  MapQuestMaps: 2ce25e394babe3f5c7b9d16743b40d260449f110
+  MQCore: fd92a5b2afadd5646256674cab9d31925bed2eb5
+  MQNavigation: 74d6d79acdcdd8e20a5b026bbde1e6b98c823031
+  MQSearchAhead: 18765da94d4abe4a337b0ef6f46fdc10c8529f0c
+  Protobuf: 7a877b7f3e5964e3fce995e2eb323dbc6831bb5a
+  Pulley: af7d2347deadc38ef78406579995568f2d6ee158
+  Reachability: 33e18b67625424e47b6cde6d202dce689ad7af96
+  SVProgressHUD: 52fb5c867395cee957e789a7baca73bd7007a4c8
+
+PODFILE CHECKSUM: 5b7a158216df4947d8d1496d98c81d7ab809fb98
+
+COCOAPODS: 1.6.1

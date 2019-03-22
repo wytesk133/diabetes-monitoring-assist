@@ -1,0 +1,5 @@
+framework module MapQuestMaps {
+ 	umbrella header "MapQuestMaps.h"
+	use Mapbox  
+
+}

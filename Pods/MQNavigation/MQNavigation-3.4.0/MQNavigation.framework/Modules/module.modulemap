@@ -1,0 +1,6 @@
+framework module MQNavigation {
+  umbrella header "MQNavigation.h"
+
+  export *
+  module * { export * }
+}

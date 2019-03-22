@@ -1,0 +1,10 @@
+/* 
+  InfoPlist.strings
+  MQDemo
+
+  Copyright © 2017 Mapquest. All rights reserved.
+*/
+
+informationSharingPrompt = "Get consent here after clearly indicating that this app will collect precise location data when app is actively navigating and will be shared with third parties for their independent use.";
+
+informationSharingDescription = "Get consent here after clearly indicating that this app will collect precise location data when app is actively navigating and will be shared with third parties for their independent use.";

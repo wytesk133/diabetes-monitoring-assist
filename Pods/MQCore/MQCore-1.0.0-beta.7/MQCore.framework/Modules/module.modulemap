@@ -1,0 +1,6 @@
+framework module MQCore {
+  umbrella header "MQCore.h"
+
+  export *
+  module * { export * }
+}
