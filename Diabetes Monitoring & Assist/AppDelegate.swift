@@ -14,8 +14,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var window: UIWindow?
 
 
-    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
+    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+         Thread.sleep(forTimeInterval: 2.0)
         HealthKitConnector.authorizeHealthKit { (authorized, error) in
             guard authorized else {
                 let baseMessage = "HealthKit Authorization Failed"
